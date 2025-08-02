@@ -85,3 +85,25 @@
 2025-08-02 16:37:17.666 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
 2025-08-02 16:37:17.666 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/favicon-32x32.png - 200 628 image/png 2.507ms
 2025-08-02 16:37:17.668 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.0365ms
+2025-08-02 16:57:31.964 +03:00 [INF] Application is shutting down...
+2025-08-02 20:56:11.428 +03:00 [INF] Starting DM web application
+2025-08-02 20:56:11.501 +03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2025-08-02 20:56:11.502 +03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2025-08-02 20:56:11.515 +03:00 [INF] Creating key {8da87604-8896-4002-8e59-7574552eb4e6} with creation date 2025-08-02 17:56:11Z, activation date 2025-08-02 17:56:11Z, and expiration date 2025-10-31 17:56:11Z.
+2025-08-02 20:56:11.535 +03:00 [WRN] No XML encryptor configured. Key {8da87604-8896-4002-8e59-7574552eb4e6} may be persisted to storage in unencrypted form.
+2025-08-02 20:56:11.574 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-02 20:56:11.575 +03:00 [INF] Hosting environment: Production
+2025-08-02 20:56:11.575 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-08-02 20:56:11.585 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/ - null null
+2025-08-02 20:56:11.612 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-08-02 20:56:11.659 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/ - 404 null null 75.0393ms
+2025-08-02 20:56:11.662 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:82/, Response status code: 404
+2025-08-02 20:56:17.389 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/index.html - null null
+2025-08-02 20:56:17.497 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/index.html - 200 null text/html;charset=utf-8 108.0698ms
+2025-08-02 20:56:17.782 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - null null
+2025-08-02 20:56:17.966 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 183.2227ms
+2025-08-02 20:56:21.975 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/index.html - null null
+2025-08-02 20:56:21.976 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/index.html - 200 null text/html;charset=utf-8 0.949ms
+2025-08-02 20:56:22.050 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - null null
+2025-08-02 20:56:22.061 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.5066ms
+2025-08-02 20:58:13.825 +03:00 [INF] Application is shutting down...
