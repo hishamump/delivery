@@ -107,3 +107,19 @@
 2025-08-02 20:56:22.050 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - null null
 2025-08-02 20:56:22.061 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.5066ms
 2025-08-02 20:58:13.825 +03:00 [INF] Application is shutting down...
+2025-08-02 20:58:41.723 +03:00 [INF] Starting DM web application
+2025-08-02 20:58:41.773 +03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2025-08-02 20:58:41.774 +03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2025-08-02 20:58:41.782 +03:00 [INF] Creating key {d9ea5e00-56b2-475c-a2a4-0d366b675cee} with creation date 2025-08-02 17:58:41Z, activation date 2025-08-02 17:58:41Z, and expiration date 2025-10-31 17:58:41Z.
+2025-08-02 20:58:41.792 +03:00 [WRN] No XML encryptor configured. Key {d9ea5e00-56b2-475c-a2a4-0d366b675cee} may be persisted to storage in unencrypted form.
+2025-08-02 20:58:41.827 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-02 20:58:41.827 +03:00 [INF] Hosting environment: Production
+2025-08-02 20:58:41.827 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-08-02 20:58:41.834 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/ - null null
+2025-08-02 20:58:41.864 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-08-02 20:58:41.892 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/ - 404 null null 59.114ms
+2025-08-02 20:58:41.897 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:82/, Response status code: 404
+2025-08-02 20:58:49.667 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/index.html - null null
+2025-08-02 20:58:49.756 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/index.html - 200 null text/html;charset=utf-8 88.4331ms
+2025-08-02 20:58:49.904 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - null null
+2025-08-02 20:58:50.062 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 158.5846ms

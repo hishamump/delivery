@@ -1,0 +1,24 @@
+2025-08-04 21:27:14.993 +03:00 [INF] Starting DM web application
+2025-08-04 21:27:15.037 +03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2025-08-04 21:27:15.038 +03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2025-08-04 21:27:15.048 +03:00 [INF] Creating key {1eb66b51-fd4f-4c53-8d5e-31dc7d4d0847} with creation date 2025-08-04 18:27:15Z, activation date 2025-08-04 18:27:15Z, and expiration date 2025-11-02 18:27:15Z.
+2025-08-04 21:27:15.054 +03:00 [WRN] No XML encryptor configured. Key {1eb66b51-fd4f-4c53-8d5e-31dc7d4d0847} may be persisted to storage in unencrypted form.
+2025-08-04 21:27:15.095 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-04 21:27:15.095 +03:00 [INF] Hosting environment: Production
+2025-08-04 21:27:15.095 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-08-04 21:27:15.103 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/ - null null
+2025-08-04 21:27:15.126 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-08-04 21:27:15.806 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/ - 404 null null 704.783ms
+2025-08-04 21:27:15.811 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:82/, Response status code: 404
+2025-08-04 21:27:16.721 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/index.html - null null
+2025-08-04 21:27:16.778 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/index.html - 200 null text/html;charset=utf-8 56.6472ms
+2025-08-04 21:27:17.020 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - null null
+2025-08-04 21:27:17.170 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 150.233ms
+2025-08-04 21:27:27.520 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:82/api/Auth/register - application/json 111
+2025-08-04 21:27:27.524 +03:00 [INF] CORS policy execution successful.
+2025-08-04 21:27:27.529 +03:00 [INF] Executing endpoint 'DM.API.Controllers.AuthController.Register (DM.API)'
+2025-08-04 21:27:27.547 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[DM.Shared.DTOs.UserDto]]] Register(DM.Shared.DTOs.CreateUserDto) on controller DM.API.Controllers.AuthController (DM.API).
+2025-08-04 21:27:28.784 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-08-04 21:27:28.800 +03:00 [INF] Executed action DM.API.Controllers.AuthController.Register (DM.API) in 1250.6073ms
+2025-08-04 21:27:28.801 +03:00 [INF] Executed endpoint 'DM.API.Controllers.AuthController.Register (DM.API)'
+2025-08-04 21:27:28.805 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:82/api/Auth/register - 400 null application/problem+json; charset=utf-8 1285.2026ms
