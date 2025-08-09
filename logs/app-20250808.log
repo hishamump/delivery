@@ -1,0 +1,171 @@
+2025-08-08 17:48:04.576 +03:00 [INF] Starting DM web application
+2025-08-08 17:48:04.650 +03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2025-08-08 17:48:04.651 +03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2025-08-08 17:48:04.664 +03:00 [INF] Creating key {4291ef00-aad1-4b47-966d-ec72cfeb1ae0} with creation date 2025-08-08 14:48:04Z, activation date 2025-08-08 14:48:04Z, and expiration date 2025-11-06 14:48:04Z.
+2025-08-08 17:48:04.687 +03:00 [WRN] No XML encryptor configured. Key {4291ef00-aad1-4b47-966d-ec72cfeb1ae0} may be persisted to storage in unencrypted form.
+2025-08-08 17:48:04.754 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-08 17:48:04.755 +03:00 [INF] Hosting environment: Production
+2025-08-08 17:48:04.755 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-08-08 17:48:04.768 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/ - null null
+2025-08-08 17:48:04.810 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-08-08 17:48:05.812 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/ - 404 null null 1045.2405ms
+2025-08-08 17:48:05.816 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:82/, Response status code: 404
+2025-08-08 17:49:13.426 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/index.html - null null
+2025-08-08 17:49:13.517 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/index.html - 200 null text/html;charset=utf-8 90.2894ms
+2025-08-08 17:49:13.657 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - null null
+2025-08-08 17:49:13.881 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 223.9488ms
+2025-08-08 17:49:46.148 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:82/api/Files/upload - multipart/form-data; boundary=----WebKitFormBoundarye59Rvha5D1sclZgY 265574
+2025-08-08 17:49:46.152 +03:00 [INF] CORS policy execution successful.
+2025-08-08 17:49:46.161 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-08 17:49:46.164 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-08 17:49:46.165 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:82/api/Files/upload - 401 null null 16.3871ms
+2025-08-08 17:51:15.658 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - null null
+2025-08-08 17:51:15.703 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 45.0685ms
+2025-08-08 17:55:42.447 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - null null
+2025-08-08 17:55:42.479 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.7116ms
+2025-08-08 18:14:25.078 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:82/api/Auth/login - application/json 47
+2025-08-08 18:14:25.081 +03:00 [INF] CORS policy execution successful.
+2025-08-08 18:14:25.086 +03:00 [INF] Executing endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-08-08 18:14:25.129 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[DM.API.Controllers.LoginResponseDto]]] Login(DM.Shared.DTOs.LoginDto) on controller DM.API.Controllers.AuthController (DM.API).
+2025-08-08 18:14:26.974 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-08-08 18:14:27.013 +03:00 [INF] Executed action DM.API.Controllers.AuthController.Login (DM.API) in 1877.9193ms
+2025-08-08 18:14:27.014 +03:00 [INF] Executed endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-08-08 18:14:27.023 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:82/api/Auth/login - 400 null application/problem+json; charset=utf-8 1945.4387ms
+2025-08-08 18:15:16.877 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:82/api/Auth/login - application/json 58
+2025-08-08 18:15:16.878 +03:00 [INF] Executing endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-08-08 18:15:16.879 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[DM.API.Controllers.LoginResponseDto]]] Login(DM.Shared.DTOs.LoginDto) on controller DM.API.Controllers.AuthController (DM.API).
+2025-08-08 18:15:17.516 +03:00 [INF] Executed DbCommand (61ms) [Parameters=[@__email_0='?', @__passwordHash_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."FirstName", u."IsActive", u."LastLoginAt", u."LastName", u."PasswordHash", u."PhoneNumber", u."Role", u."SupplierId", u."UpdatedAt"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0 AND u."PasswordHash" = @__passwordHash_1 AND u."IsActive"
+LIMIT 1
+2025-08-08 18:15:17.535 +03:00 [ERR] Error logging in user: hisham.ump@gmail.com
+DM.Core.Exceptions.BusinessException: Invalid email or password
+   at DM.Core.Services.UserService.AuthenticateAsync(LoginDto loginDto) in D:\HW-Projects\x\sln\DM.Core\Services\UserService.cs:line 96
+   at DM.API.Controllers.AuthController.Login(LoginDto loginDto) in D:\HW-Projects\x\sln\DM.API\Controllers\AuthController.cs:line 51
+2025-08-08 18:15:17.570 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[DM.API.Controllers.LoginResponseDto, DM.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-08 18:15:17.587 +03:00 [INF] Executed action DM.API.Controllers.AuthController.Login (DM.API) in 708.3049ms
+2025-08-08 18:15:17.589 +03:00 [INF] Executed endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-08-08 18:15:17.592 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:82/api/Auth/login - 400 null application/json; charset=utf-8 715.1324ms
+2025-08-08 18:15:29.226 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:82/api/Auth/login - application/json 63
+2025-08-08 18:15:29.226 +03:00 [INF] Executing endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-08-08 18:15:29.227 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[DM.API.Controllers.LoginResponseDto]]] Login(DM.Shared.DTOs.LoginDto) on controller DM.API.Controllers.AuthController (DM.API).
+2025-08-08 18:15:29.247 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__email_0='?', @__passwordHash_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."FirstName", u."IsActive", u."LastLoginAt", u."LastName", u."PasswordHash", u."PhoneNumber", u."Role", u."SupplierId", u."UpdatedAt"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0 AND u."PasswordHash" = @__passwordHash_1 AND u."IsActive"
+LIMIT 1
+2025-08-08 18:15:29.249 +03:00 [ERR] Error logging in user: hisham.ump@gmail.com
+DM.Core.Exceptions.BusinessException: Invalid email or password
+   at DM.Core.Services.UserService.AuthenticateAsync(LoginDto loginDto) in D:\HW-Projects\x\sln\DM.Core\Services\UserService.cs:line 96
+   at DM.API.Controllers.AuthController.Login(LoginDto loginDto) in D:\HW-Projects\x\sln\DM.API\Controllers\AuthController.cs:line 51
+2025-08-08 18:15:29.250 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[DM.API.Controllers.LoginResponseDto, DM.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-08 18:15:29.250 +03:00 [INF] Executed action DM.API.Controllers.AuthController.Login (DM.API) in 23.7555ms
+2025-08-08 18:15:29.251 +03:00 [INF] Executed endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-08-08 18:15:29.251 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:82/api/Auth/login - 400 null application/json; charset=utf-8 25.1552ms
+2025-08-08 18:15:48.233 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:82/api/Auth/login - application/json 62
+2025-08-08 18:15:48.234 +03:00 [INF] Executing endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-08-08 18:15:48.234 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[DM.API.Controllers.LoginResponseDto]]] Login(DM.Shared.DTOs.LoginDto) on controller DM.API.Controllers.AuthController (DM.API).
+2025-08-08 18:15:48.237 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?', @__passwordHash_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."FirstName", u."IsActive", u."LastLoginAt", u."LastName", u."PasswordHash", u."PhoneNumber", u."Role", u."SupplierId", u."UpdatedAt"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0 AND u."PasswordHash" = @__passwordHash_1 AND u."IsActive"
+LIMIT 1
+2025-08-08 18:15:48.237 +03:00 [ERR] Error logging in user: hisham.ump@gmail.com
+DM.Core.Exceptions.BusinessException: Invalid email or password
+   at DM.Core.Services.UserService.AuthenticateAsync(LoginDto loginDto) in D:\HW-Projects\x\sln\DM.Core\Services\UserService.cs:line 96
+   at DM.API.Controllers.AuthController.Login(LoginDto loginDto) in D:\HW-Projects\x\sln\DM.API\Controllers\AuthController.cs:line 51
+2025-08-08 18:15:48.238 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[DM.API.Controllers.LoginResponseDto, DM.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-08 18:15:48.238 +03:00 [INF] Executed action DM.API.Controllers.AuthController.Login (DM.API) in 4.4508ms
+2025-08-08 18:15:48.238 +03:00 [INF] Executed endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-08-08 18:15:48.239 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:82/api/Auth/login - 400 null application/json; charset=utf-8 5.2238ms
+2025-08-08 18:16:05.535 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:82/api/Auth/login - application/json 58
+2025-08-08 18:16:05.536 +03:00 [INF] Executing endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-08-08 18:16:05.536 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[DM.API.Controllers.LoginResponseDto]]] Login(DM.Shared.DTOs.LoginDto) on controller DM.API.Controllers.AuthController (DM.API).
+2025-08-08 18:16:05.543 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__email_0='?', @__passwordHash_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."FirstName", u."IsActive", u."LastLoginAt", u."LastName", u."PasswordHash", u."PhoneNumber", u."Role", u."SupplierId", u."UpdatedAt"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0 AND u."PasswordHash" = @__passwordHash_1 AND u."IsActive"
+LIMIT 1
+2025-08-08 18:16:05.544 +03:00 [ERR] Error logging in user: hisham@gmail.com
+DM.Core.Exceptions.BusinessException: Invalid email or password
+   at DM.Core.Services.UserService.AuthenticateAsync(LoginDto loginDto) in D:\HW-Projects\x\sln\DM.Core\Services\UserService.cs:line 96
+   at DM.API.Controllers.AuthController.Login(LoginDto loginDto) in D:\HW-Projects\x\sln\DM.API\Controllers\AuthController.cs:line 51
+2025-08-08 18:16:05.545 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[DM.API.Controllers.LoginResponseDto, DM.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-08 18:16:05.545 +03:00 [INF] Executed action DM.API.Controllers.AuthController.Login (DM.API) in 9.1105ms
+2025-08-08 18:16:05.545 +03:00 [INF] Executed endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-08-08 18:16:05.546 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:82/api/Auth/login - 400 null application/json; charset=utf-8 10.2964ms
+2025-08-08 18:16:18.601 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:82/api/Auth/login - application/json 59
+2025-08-08 18:16:18.602 +03:00 [INF] Executing endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-08-08 18:16:18.602 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[DM.API.Controllers.LoginResponseDto]]] Login(DM.Shared.DTOs.LoginDto) on controller DM.API.Controllers.AuthController (DM.API).
+2025-08-08 18:16:18.604 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?', @__passwordHash_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."FirstName", u."IsActive", u."LastLoginAt", u."LastName", u."PasswordHash", u."PhoneNumber", u."Role", u."SupplierId", u."UpdatedAt"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0 AND u."PasswordHash" = @__passwordHash_1 AND u."IsActive"
+LIMIT 1
+2025-08-08 18:16:18.605 +03:00 [ERR] Error logging in user: hisham@gmail.com
+DM.Core.Exceptions.BusinessException: Invalid email or password
+   at DM.Core.Services.UserService.AuthenticateAsync(LoginDto loginDto) in D:\HW-Projects\x\sln\DM.Core\Services\UserService.cs:line 96
+   at DM.API.Controllers.AuthController.Login(LoginDto loginDto) in D:\HW-Projects\x\sln\DM.API\Controllers\AuthController.cs:line 51
+2025-08-08 18:16:18.605 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[DM.API.Controllers.LoginResponseDto, DM.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-08 18:16:18.606 +03:00 [INF] Executed action DM.API.Controllers.AuthController.Login (DM.API) in 4.0484ms
+2025-08-08 18:16:18.606 +03:00 [INF] Executed endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-08-08 18:16:18.606 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:82/api/Auth/login - 400 null application/json; charset=utf-8 5.2375ms
+2025-08-08 18:16:24.439 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:82/api/Auth/login - application/json 54
+2025-08-08 18:16:24.440 +03:00 [INF] Executing endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-08-08 18:16:24.440 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[DM.API.Controllers.LoginResponseDto]]] Login(DM.Shared.DTOs.LoginDto) on controller DM.API.Controllers.AuthController (DM.API).
+2025-08-08 18:16:24.445 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__email_0='?', @__passwordHash_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."FirstName", u."IsActive", u."LastLoginAt", u."LastName", u."PasswordHash", u."PhoneNumber", u."Role", u."SupplierId", u."UpdatedAt"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0 AND u."PasswordHash" = @__passwordHash_1 AND u."IsActive"
+LIMIT 1
+2025-08-08 18:16:24.605 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."FirstName", u."IsActive", u."LastLoginAt", u."LastName", u."PasswordHash", u."PhoneNumber", u."Role", u."SupplierId", u."UpdatedAt"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0
+LIMIT 1
+2025-08-08 18:16:24.623 +03:00 [INF] User logged in successfully: hisham@gmail.com
+2025-08-08 18:16:24.626 +03:00 [INF] Executing OkObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[DM.API.Controllers.LoginResponseDto, DM.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-08 18:16:24.633 +03:00 [INF] Executed action DM.API.Controllers.AuthController.Login (DM.API) in 193.2852ms
+2025-08-08 18:16:24.633 +03:00 [INF] Executed endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-08-08 18:16:24.634 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:82/api/Auth/login - 200 null application/json; charset=utf-8 194.461ms
+2025-08-08 18:33:49.999 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:82/api/Files/upload - multipart/form-data; boundary=--------------------------335316145498112395380651 206214
+2025-08-08 18:33:50.004 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-08 18:33:50.005 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-08 18:33:50.005 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:82/api/Files/upload - 401 null null 6.0954ms
+2025-08-08 18:35:16.939 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:82/api/Files/upload - multipart/form-data; boundary=--------------------------866472722410033786775101 206214
+2025-08-08 18:35:16.991 +03:00 [INF] Executing endpoint 'DM.API.Controllers.FilesController.UploadFile (DM.API)'
+2025-08-08 18:35:16.999 +03:00 [INF] Route matched with {action = "UploadFile", controller = "Files"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.FileUploadResponseDto]] UploadFile(DM.Shared.DTOs.FileUploadDto) on controller DM.API.Controllers.FilesController (DM.API).
+2025-08-08 18:35:17.037 +03:00 [ERR] Error uploading file: chair.png
+System.ArgumentNullException: Value cannot be null. (Parameter 'path1')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.IO.Path.Combine(String path1, String path2, String path3)
+   at DM.Infrastructure.Services.FileStorageService.UploadFileAsync(IFormFile file, String category) in D:\HW-Projects\x\sln\DM.Infrastructure\Services\FileStorageService.cs:line 40
+2025-08-08 18:35:17.051 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-08 18:35:17.055 +03:00 [INF] Executed action DM.API.Controllers.FilesController.UploadFile (DM.API) in 55.9401ms
+2025-08-08 18:35:17.055 +03:00 [INF] Executed endpoint 'DM.API.Controllers.FilesController.UploadFile (DM.API)'
+2025-08-08 18:35:17.059 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:82/api/Files/upload - 400 null application/json; charset=utf-8 120.1596ms
+2025-08-08 18:55:59.325 +03:00 [INF] Application is shutting down...
+2025-08-08 21:49:00.794 +03:00 [INF] Starting DM web application
+2025-08-08 21:49:00.850 +03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2025-08-08 21:49:00.852 +03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2025-08-08 21:49:00.865 +03:00 [INF] Creating key {42518f25-db1a-4c9f-8b1a-72cfac91628a} with creation date 2025-08-08 18:49:00Z, activation date 2025-08-08 18:49:00Z, and expiration date 2025-11-06 18:49:00Z.
+2025-08-08 21:49:00.878 +03:00 [WRN] No XML encryptor configured. Key {42518f25-db1a-4c9f-8b1a-72cfac91628a} may be persisted to storage in unencrypted form.
+2025-08-08 21:49:00.919 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-08 21:49:00.919 +03:00 [INF] Hosting environment: Production
+2025-08-08 21:49:00.920 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-08-08 21:49:00.930 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:82/api/Files/upload - multipart/form-data; boundary=--------------------------546601681175908413815922 206214
+2025-08-08 21:49:00.967 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-08-08 21:49:01.068 +03:00 [INF] Executing endpoint 'DM.API.Controllers.FilesController.UploadFile (DM.API)'
+2025-08-08 21:49:01.103 +03:00 [INF] Route matched with {action = "UploadFile", controller = "Files"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.FileUploadResponseDto]] UploadFile(DM.Shared.DTOs.FileUploadDto) on controller DM.API.Controllers.FilesController (DM.API).
+2025-08-08 21:49:01.165 +03:00 [ERR] Error uploading file: chair.png
+System.ArgumentNullException: Value cannot be null. (Parameter 'path1')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.IO.Path.Combine(String path1, String path2, String path3)
+   at DM.Infrastructure.Services.FileStorageService.UploadFileAsync(IFormFile file, String category) in D:\HW-Projects\x\sln\DM.Infrastructure\Services\FileStorageService.cs:line 41
+2025-08-08 21:49:01.195 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-08 21:49:01.212 +03:00 [INF] Executed action DM.API.Controllers.FilesController.UploadFile (DM.API) in 105.0623ms
+2025-08-08 21:49:01.214 +03:00 [INF] Executed endpoint 'DM.API.Controllers.FilesController.UploadFile (DM.API)'
+2025-08-08 21:49:01.220 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:82/api/Files/upload - 400 null application/json; charset=utf-8 290.3558ms

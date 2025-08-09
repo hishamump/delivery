@@ -1,0 +1,16 @@
+2025-08-05 16:22:24.333 +03:00 [INF] Application is shutting down...
+2025-08-05 19:36:40.496 +03:00 [INF] Starting DM web application
+2025-08-05 19:36:40.593 +03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2025-08-05 19:36:40.595 +03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2025-08-05 19:36:40.610 +03:00 [INF] Creating key {accd0ac5-8a5a-4ce5-800c-0e5f944b1211} with creation date 2025-08-05 16:36:40Z, activation date 2025-08-05 16:36:40Z, and expiration date 2025-11-03 16:36:40Z.
+2025-08-05 19:36:40.620 +03:00 [WRN] No XML encryptor configured. Key {accd0ac5-8a5a-4ce5-800c-0e5f944b1211} may be persisted to storage in unencrypted form.
+2025-08-05 19:36:40.696 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-05 19:36:40.698 +03:00 [INF] Hosting environment: Production
+2025-08-05 19:36:40.698 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-08-05 19:36:40.711 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - null null
+2025-08-05 19:36:40.980 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 272.4137ms
+2025-08-05 19:36:41.068 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/favicon.ico - null null
+2025-08-05 19:36:41.080 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-08-05 19:36:42.083 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/favicon.ico - 404 null null 1015.4295ms
+2025-08-05 19:36:42.086 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:82/favicon.ico, Response status code: 404
+2025-08-05 19:57:34.167 +03:00 [INF] Application is shutting down...
