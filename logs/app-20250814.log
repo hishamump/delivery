@@ -1,0 +1,64 @@
+2025-08-14 20:10:57.619 +03:00 [INF] Starting DM web application
+2025-08-14 20:10:57.680 +03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2025-08-14 20:10:57.681 +03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2025-08-14 20:10:57.695 +03:00 [INF] Creating key {ea63a458-77e6-4e76-8a2b-e8a3208a96f8} with creation date 2025-08-14 17:10:57Z, activation date 2025-08-14 17:10:57Z, and expiration date 2025-11-12 17:10:57Z.
+2025-08-14 20:10:57.713 +03:00 [WRN] No XML encryptor configured. Key {ea63a458-77e6-4e76-8a2b-e8a3208a96f8} may be persisted to storage in unencrypted form.
+2025-08-14 20:10:57.766 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-14 20:10:57.767 +03:00 [INF] Hosting environment: Production
+2025-08-14 20:10:57.767 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-08-14 20:10:57.775 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/api/Users/profile - null null
+2025-08-14 20:10:57.817 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-08-14 20:10:58.529 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-14 20:10:58.531 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-14 20:10:58.543 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/api/Users/profile - 401 null null 768.2759ms
+2025-08-14 20:11:56.120 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:82/api/Auth/login - application/json 54
+2025-08-14 20:11:56.128 +03:00 [INF] Executing endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-08-14 20:11:56.159 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[DM.API.Controllers.LoginResponseDto]]] Login(DM.Shared.DTOs.LoginDto) on controller DM.API.Controllers.AuthController (DM.API).
+2025-08-14 20:11:58.247 +03:00 [INF] Executed DbCommand (55ms) [Parameters=[@__email_0='?', @__passwordHash_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."FirstName", u."IsActive", u."LastLoginAt", u."LastName", u."PasswordHash", u."PhoneNumber", u."Role", u."SupplierId", u."UpdatedAt"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0 AND u."PasswordHash" = @__passwordHash_1 AND u."IsActive"
+LIMIT 1
+2025-08-14 20:11:58.412 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."FirstName", u."IsActive", u."LastLoginAt", u."LastName", u."PasswordHash", u."PhoneNumber", u."Role", u."SupplierId", u."UpdatedAt"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0
+LIMIT 1
+2025-08-14 20:11:58.424 +03:00 [INF] User logged in successfully: hisham@gmail.com
+2025-08-14 20:11:58.428 +03:00 [INF] Executing OkObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[DM.API.Controllers.LoginResponseDto, DM.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-14 20:11:58.458 +03:00 [INF] Executed action DM.API.Controllers.AuthController.Login (DM.API) in 2296.244ms
+2025-08-14 20:11:58.459 +03:00 [INF] Executed endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-08-14 20:11:58.464 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:82/api/Auth/login - 200 null application/json; charset=utf-8 2343.8212ms
+2025-08-14 20:20:10.900 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/api/Users/profile - null null
+2025-08-14 20:20:10.961 +03:00 [INF] Executing endpoint 'DM.API.Controllers.UsersController.GetProfile (DM.API)'
+2025-08-14 20:20:10.965 +03:00 [INF] Route matched with {action = "GetProfile", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[DM.Shared.DTOs.UserDto]]] GetProfile() on controller DM.API.Controllers.UsersController (DM.API).
+2025-08-14 20:20:11.015 +03:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[DM.Shared.DTOs.UserDto, DM.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-14 20:20:11.019 +03:00 [INF] Executed action DM.API.Controllers.UsersController.GetProfile (DM.API) in 53.5127ms
+2025-08-14 20:20:11.019 +03:00 [INF] Executed endpoint 'DM.API.Controllers.UsersController.GetProfile (DM.API)'
+2025-08-14 20:20:11.019 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/api/Users/profile - 401 null application/json; charset=utf-8 118.9129ms
+2025-08-14 20:21:40.344 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:82/api/Auth/login - application/json 54
+2025-08-14 20:21:40.346 +03:00 [INF] Executing endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-08-14 20:21:40.347 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[DM.API.Controllers.LoginResponseDto]]] Login(DM.Shared.DTOs.LoginDto) on controller DM.API.Controllers.AuthController (DM.API).
+2025-08-14 20:21:40.409 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__email_0='?', @__passwordHash_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."FirstName", u."IsActive", u."LastLoginAt", u."LastName", u."PasswordHash", u."PhoneNumber", u."Role", u."SupplierId", u."UpdatedAt"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0 AND u."PasswordHash" = @__passwordHash_1 AND u."IsActive"
+LIMIT 1
+2025-08-14 20:21:40.411 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."FirstName", u."IsActive", u."LastLoginAt", u."LastName", u."PasswordHash", u."PhoneNumber", u."Role", u."SupplierId", u."UpdatedAt"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0
+LIMIT 1
+2025-08-14 20:21:40.412 +03:00 [INF] User logged in successfully: hisham@gmail.com
+2025-08-14 20:21:40.412 +03:00 [INF] Executing OkObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[DM.API.Controllers.LoginResponseDto, DM.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-14 20:21:40.413 +03:00 [INF] Executed action DM.API.Controllers.AuthController.Login (DM.API) in 66.3218ms
+2025-08-14 20:21:40.413 +03:00 [INF] Executed endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-08-14 20:21:40.414 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:82/api/Auth/login - 200 null application/json; charset=utf-8 69.3274ms
+2025-08-14 20:23:04.138 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/api/Users/profile - null null
+2025-08-14 20:23:04.142 +03:00 [INF] Executing endpoint 'DM.API.Controllers.UsersController.GetProfile (DM.API)'
+2025-08-14 20:23:04.142 +03:00 [INF] Route matched with {action = "GetProfile", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[DM.Shared.DTOs.UserDto]]] GetProfile() on controller DM.API.Controllers.UsersController (DM.API).
+2025-08-14 20:23:04.143 +03:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[DM.Shared.DTOs.UserDto, DM.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-14 20:23:04.144 +03:00 [INF] Executed action DM.API.Controllers.UsersController.GetProfile (DM.API) in 1.5392ms
+2025-08-14 20:23:04.144 +03:00 [INF] Executed endpoint 'DM.API.Controllers.UsersController.GetProfile (DM.API)'
+2025-08-14 20:23:04.144 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/api/Users/profile - 401 null application/json; charset=utf-8 6.0738ms

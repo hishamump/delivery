@@ -179,48 +179,100 @@ VALUES ('20250731160234_InitialCreate', '8.0.0');
 
 COMMIT;
 
-        
+START TRANSACTION;
 
-In this system I have three types of users. the normal Customer, Supplier, and Driver. the Supplier and Driver are users but with additional properties. what the options to represent them and configure the relation, in entity framework?
+ALTER TABLE "Addresses" DROP CONSTRAINT "FK_Addresses_Suppliers_SupplierId";
 
+ALTER TABLE "DeliverySchedules" DROP CONSTRAINT "FK_DeliverySchedules_Suppliers_SupplierId";
 
-What do think if I modify the design so the shared properties are:
-        public string FullName { get; set; } = string.Empty;
-        public string Email { get; set; } = string.Empty;
-        public string PasswordHash { get; set; } = string.Empty;
-        public string? PhoneNumber { get; set; }
-        public UserRole Role { get; set; }
-        public bool IsActive { get; set; } = true;
-        
-		// Navigation properties
-        public virtual ICollection<Address> Addresses { get; set; } = new List<Address>();		
+ALTER TABLE "Items" DROP CONSTRAINT "FK_Items_Suppliers_SupplierId";
 
-Customer:
-		public DateOnly? BirthDate { get; set; }
-		
-		// Navigation properties
-		public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
-		
-Supplier:
-		
-		public string BusinessName { get; set; } = string.Empty;
-		public string ContactEmail { get; set; } = string.Empty;
-        public string ContactPhone { get; set; } = string.Empty;
-        public string? BusinessDescription { get; set; }		
-		public string? Logo { get; set; } = string.Empty;
-		public string? BusinessLicense { get; set; }
-		
-Driver:
-		
-		public string LicenseNumber { get; set; } = string.Empty;
-		public string VehicleType { get; set; } = string.Empty; // motorcycle, car, bicycle
-		public string VehiclePlateNumber { get; set; } = string.Empty;
-        public string? VehicleModel { get; set; }
-        public string? VehicleColor { get; set; }
-        public bool IsAvailable { get; set; } = true;
-        public bool IsVerified { get; set; } = false;
-        public decimal Rating { get; set; } = 0;
-        public int TotalRatings { get; set; } = 0;
-        public DateTime? LastLocationUpdate { get; set; }
-        public decimal? CurrentLatitude { get; set; }
-        public decimal? CurrentLongitude { get; set; }	
+DROP INDEX "IX_DeliverySchedules_SupplierId";
+
+ALTER TABLE "Users" DROP COLUMN "FirstName";
+
+ALTER TABLE "Users" DROP COLUMN "SupplierId";
+
+ALTER TABLE "Suppliers" DROP COLUMN "IsActive";
+
+ALTER TABLE "DeliverySchedules" DROP COLUMN "SupplierId";
+
+ALTER TABLE "Users" RENAME COLUMN "LastName" TO "FullName";
+
+ALTER INDEX "IX_Users_Email" RENAME TO "IX_User_Email";
+
+ALTER TABLE "Suppliers" RENAME COLUMN "TaxNumber" TO "Logo";
+
+ALTER INDEX "IX_Suppliers_UserId" RENAME TO "IX_Supplier_UserId";
+
+ALTER TABLE "Users" ADD "BirthDate" date;
+
+ALTER TABLE "Users" ADD "EmailNotifications" boolean NOT NULL DEFAULT FALSE;
+
+ALTER TABLE "Users" ADD "Photo" character varying(500);
+
+ALTER TABLE "Users" ADD "PreferredLanguage" character varying(5) DEFAULT 'en';
+
+ALTER TABLE "Users" ADD "SmsNotifications" boolean NOT NULL DEFAULT FALSE;
+
+ALTER TABLE "Suppliers" ADD CONSTRAINT "AK_Suppliers_UserId" UNIQUE ("UserId");
+
+CREATE TABLE "Drivers" (
+    "Id" uuid NOT NULL,
+    "UserId" uuid NOT NULL,
+    "LicenseNumber" character varying(50) NOT NULL,
+    "VehicleType" character varying(50) NOT NULL,
+    "VehiclePlateNumber" character varying(20) NOT NULL,
+    "VehicleModel" character varying(100),
+    "VehicleColor" character varying(50),
+    "IsAvailable" boolean NOT NULL,
+    "IsVerified" boolean NOT NULL,
+    "Rating" numeric(3,2) NOT NULL,
+    "TotalRatings" integer NOT NULL,
+    "LastLocationUpdate" timestamp with time zone,
+    "CurrentLatitude" numeric(10,7),
+    "CurrentLongitude" numeric(10,7),
+    "CreatedAt" timestamp with time zone NOT NULL DEFAULT (NOW()),
+    "UpdatedAt" timestamp with time zone NOT NULL DEFAULT (NOW()),
+    CONSTRAINT "PK_Drivers" PRIMARY KEY ("Id"),
+    CONSTRAINT "AK_Drivers_UserId" UNIQUE ("UserId"),
+    CONSTRAINT "FK_Drivers_Users_UserId" FOREIGN KEY ("UserId") REFERENCES "Users" ("Id") ON DELETE CASCADE
+);
+
+CREATE TABLE "Deliveries" (
+    "Id" uuid NOT NULL,
+    "OrderId" uuid NOT NULL,
+    "DriverId" uuid NOT NULL,
+    "AssignedAt" timestamp with time zone NOT NULL,
+    "PickedUpAt" timestamp with time zone,
+    "DeliveredAt" timestamp with time zone,
+    "Status" integer NOT NULL,
+    "DriverLatitude" numeric,
+    "DriverLongitude" numeric,
+    "LocationUpdatedAt" timestamp with time zone,
+    "DeliveryNotes" text,
+    "DeliveryFee" numeric NOT NULL,
+    "CreatedAt" timestamp with time zone NOT NULL,
+    "UpdatedAt" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_Deliveries" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_Deliveries_Drivers_DriverId" FOREIGN KEY ("DriverId") REFERENCES "Drivers" ("UserId") ON DELETE RESTRICT,
+    CONSTRAINT "FK_Deliveries_Orders_OrderId" FOREIGN KEY ("OrderId") REFERENCES "Orders" ("Id") ON DELETE CASCADE
+);
+
+CREATE INDEX "IX_Deliveries_DriverId" ON "Deliveries" ("DriverId");
+
+CREATE INDEX "IX_Deliveries_OrderId" ON "Deliveries" ("OrderId");
+
+CREATE UNIQUE INDEX "IX_Driver_LicenseNumber" ON "Drivers" ("LicenseNumber");
+
+CREATE UNIQUE INDEX "IX_Driver_UserId" ON "Drivers" ("UserId");
+
+ALTER TABLE "Addresses" ADD CONSTRAINT "FK_Addresses_Suppliers_SupplierId" FOREIGN KEY ("SupplierId") REFERENCES "Suppliers" ("Id");
+
+ALTER TABLE "Items" ADD CONSTRAINT "FK_Items_Suppliers_SupplierId" FOREIGN KEY ("SupplierId") REFERENCES "Suppliers" ("UserId") ON DELETE CASCADE;
+
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20250825165558_CreateUserProfilesSystem', '8.0.0');
+
+COMMIT;
+

@@ -1,0 +1,62 @@
+2025-08-10 09:34:33.445 +03:00 [INF] Application is shutting down...
+2025-08-10 16:16:56.927 +03:00 [INF] Starting DM web application
+2025-08-10 16:16:57.025 +03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2025-08-10 16:16:57.026 +03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2025-08-10 16:16:57.046 +03:00 [INF] Creating key {ad7c95f4-7b50-42a5-9fe8-31ce0c32c06d} with creation date 2025-08-10 13:16:57Z, activation date 2025-08-10 13:16:57Z, and expiration date 2025-11-08 13:16:57Z.
+2025-08-10 16:16:57.066 +03:00 [WRN] No XML encryptor configured. Key {ad7c95f4-7b50-42a5-9fe8-31ce0c32c06d} may be persisted to storage in unencrypted form.
+2025-08-10 16:16:57.148 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-10 16:16:57.148 +03:00 [INF] Hosting environment: Production
+2025-08-10 16:16:57.149 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-08-10 16:16:57.162 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/api/Items - null null
+2025-08-10 16:16:57.219 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-08-10 16:16:58.409 +03:00 [INF] Executing endpoint 'DM.API.Controllers.ItemsController.GetAvailableItems (DM.API)'
+2025-08-10 16:16:58.435 +03:00 [INF] Route matched with {action = "GetAvailableItems", controller = "Items"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[System.Collections.Generic.IEnumerable`1[DM.Shared.DTOs.ItemDto]]]] GetAvailableItems() on controller DM.API.Controllers.ItemsController (DM.API).
+2025-08-10 16:17:01.355 +03:00 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT i."Id", i."Category", i."CreatedAt", i."Currency", i."Description", i."ImageUrl", i."IsActive", i."MinOrderQuantity", i."Name", i."Price", i."StockQuantity", i."SupplierId", i."Unit", i."UpdatedAt", s."Id", s."BusinessDescription", s."BusinessLicense", s."BusinessName", s."ContactEmail", s."ContactPhone", s."CreatedAt", s."IsActive", s."IsVerified", s."Rating", s."TaxNumber", s."TotalRatings", s."UpdatedAt", s."UserId"
+FROM "Items" AS i
+INNER JOIN "Suppliers" AS s ON i."SupplierId" = s."Id"
+WHERE i."IsActive" AND i."StockQuantity" > 0
+ORDER BY i."Name"
+2025-08-10 16:17:01.414 +03:00 [INF] Executing OkObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[DM.Shared.DTOs.ItemDto, DM.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-10 16:17:01.510 +03:00 [INF] Executed action DM.API.Controllers.ItemsController.GetAvailableItems (DM.API) in 3070.7551ms
+2025-08-10 16:17:01.512 +03:00 [INF] Executed endpoint 'DM.API.Controllers.ItemsController.GetAvailableItems (DM.API)'
+2025-08-10 16:17:01.529 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/api/Items - 200 null application/json; charset=utf-8 4368.6986ms
+2025-08-10 16:31:57.519 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:82/api/Items?SupplierId=f8066728-73cb-f220-4500-286443ad4234&Name=ad%20nisi&Description=ad%20nisi&Category=ad%20nisi&Price=72084176.09503165&Currency=ad%20nisi&StockQuantity=-59780206&MinOrderQuantity=-59780206&Unit=ad%20nisi&ImageUrl=ad%20nisi&RemoveExistingImage=true - multipart/form-data; boundary=--------------------------015900011292962475278943 303
+2025-08-10 16:31:57.531 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Supplier)
+2025-08-10 16:31:57.536 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-10 16:31:57.538 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:82/api/Items?SupplierId=f8066728-73cb-f220-4500-286443ad4234&Name=ad%20nisi&Description=ad%20nisi&Category=ad%20nisi&Price=72084176.09503165&Currency=ad%20nisi&StockQuantity=-59780206&MinOrderQuantity=-59780206&Unit=ad%20nisi&ImageUrl=ad%20nisi&RemoveExistingImage=true - 401 null null 19.6724ms
+2025-08-10 16:32:54.393 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:82/api/Items?SupplierId=f8066728-73cb-f220-4500-286443ad4234&Name=ad%20nisi&Description=ad%20nisi&Category=ad%20nisi&Price=72084176.09503165&Currency=ad%20nisi&StockQuantity=-59780206&MinOrderQuantity=-59780206&Unit=ad%20nisi&ImageUrl=ad%20nisi&RemoveExistingImage=true - multipart/form-data; boundary=--------------------------398513365759459518777859 303
+2025-08-10 16:32:54.637 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Supplier)
+2025-08-10 16:32:54.639 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-08-10 16:32:54.640 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:82/api/Items?SupplierId=f8066728-73cb-f220-4500-286443ad4234&Name=ad%20nisi&Description=ad%20nisi&Category=ad%20nisi&Price=72084176.09503165&Currency=ad%20nisi&StockQuantity=-59780206&MinOrderQuantity=-59780206&Unit=ad%20nisi&ImageUrl=ad%20nisi&RemoveExistingImage=true - 403 null null 246.8539ms
+2025-08-10 16:34:18.756 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:82/api/Items?SupplierId=f8066728-73cb-f220-4500-286443ad4234&Name=ad%20nisi&Description=ad%20nisi&Category=ad%20nisi&Price=72084176.09503165&Currency=ad%20nisi&StockQuantity=-59780206&MinOrderQuantity=-59780206&Unit=ad%20nisi&ImageUrl=ad%20nisi&RemoveExistingImage=true - multipart/form-data; boundary=--------------------------713577627023261976162862 303
+2025-08-10 16:34:18.758 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Supplier)
+2025-08-10 16:34:18.758 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-08-10 16:34:18.759 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:82/api/Items?SupplierId=f8066728-73cb-f220-4500-286443ad4234&Name=ad%20nisi&Description=ad%20nisi&Category=ad%20nisi&Price=72084176.09503165&Currency=ad%20nisi&StockQuantity=-59780206&MinOrderQuantity=-59780206&Unit=ad%20nisi&ImageUrl=ad%20nisi&RemoveExistingImage=true - 403 null null 2.5578ms
+2025-08-10 16:34:26.041 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:82/api/Auth/login - application/json 54
+2025-08-10 16:34:26.041 +03:00 [INF] Executing endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-08-10 16:34:26.053 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[DM.API.Controllers.LoginResponseDto]]] Login(DM.Shared.DTOs.LoginDto) on controller DM.API.Controllers.AuthController (DM.API).
+2025-08-10 16:34:26.308 +03:00 [INF] Executed DbCommand (41ms) [Parameters=[@__email_0='?', @__passwordHash_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."FirstName", u."IsActive", u."LastLoginAt", u."LastName", u."PasswordHash", u."PhoneNumber", u."Role", u."SupplierId", u."UpdatedAt"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0 AND u."PasswordHash" = @__passwordHash_1 AND u."IsActive"
+LIMIT 1
+2025-08-10 16:34:26.442 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."FirstName", u."IsActive", u."LastLoginAt", u."LastName", u."PasswordHash", u."PhoneNumber", u."Role", u."SupplierId", u."UpdatedAt"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0
+LIMIT 1
+2025-08-10 16:34:26.456 +03:00 [INF] User logged in successfully: hisham@gmail.com
+2025-08-10 16:34:26.457 +03:00 [INF] Executing OkObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[DM.API.Controllers.LoginResponseDto, DM.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-10 16:34:26.466 +03:00 [INF] Executed action DM.API.Controllers.AuthController.Login (DM.API) in 412.5978ms
+2025-08-10 16:34:26.467 +03:00 [INF] Executed endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-08-10 16:34:26.467 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:82/api/Auth/login - 200 null application/json; charset=utf-8 426.4398ms
+2025-08-10 16:34:50.741 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:82/api/Items?SupplierId=f8066728-73cb-f220-4500-286443ad4234&Name=ad%20nisi&Description=ad%20nisi&Category=ad%20nisi&Price=72084176.09503165&Currency=ad%20nisi&StockQuantity=-59780206&MinOrderQuantity=-59780206&Unit=ad%20nisi&ImageUrl=ad%20nisi&RemoveExistingImage=true - multipart/form-data; boundary=--------------------------215601347867824914576783 303
+2025-08-10 16:34:50.742 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Supplier)
+2025-08-10 16:34:50.742 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-08-10 16:34:50.742 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:82/api/Items?SupplierId=f8066728-73cb-f220-4500-286443ad4234&Name=ad%20nisi&Description=ad%20nisi&Category=ad%20nisi&Price=72084176.09503165&Currency=ad%20nisi&StockQuantity=-59780206&MinOrderQuantity=-59780206&Unit=ad%20nisi&ImageUrl=ad%20nisi&RemoveExistingImage=true - 403 null null 1.244ms
+2025-08-10 16:54:50.884 +03:00 [INF] Application is shutting down...

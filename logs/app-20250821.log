@@ -1,0 +1,15 @@
+2025-08-21 19:12:39.702 +03:00 [INF] Starting DM web application
+2025-08-21 19:12:39.796 +03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2025-08-21 19:12:39.797 +03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2025-08-21 19:12:39.817 +03:00 [INF] Creating key {65833381-6703-4c28-82c8-64782ddda5b8} with creation date 2025-08-21 16:12:39Z, activation date 2025-08-21 16:12:39Z, and expiration date 2025-11-19 16:12:39Z.
+2025-08-21 19:12:39.885 +03:00 [WRN] No XML encryptor configured. Key {65833381-6703-4c28-82c8-64782ddda5b8} may be persisted to storage in unencrypted form.
+2025-08-21 19:12:39.979 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 19:12:39.979 +03:00 [INF] Hosting environment: Production
+2025-08-21 19:12:39.979 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-08-21 19:12:39.992 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - null null
+2025-08-21 19:12:40.259 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 268.5884ms
+2025-08-21 19:12:48.851 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - null null
+2025-08-21 19:12:48.902 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 50.7342ms
+2025-08-21 19:12:57.561 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - null null
+2025-08-21 19:12:57.588 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.4135ms
+2025-08-21 19:33:33.785 +03:00 [INF] Application is shutting down...
