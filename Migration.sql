@@ -276,3 +276,16 @@ VALUES ('20250825165558_CreateUserProfilesSystem', '8.0.0');
 
 COMMIT;
 
+START TRANSACTION;
+
+ALTER TABLE "Items" DROP CONSTRAINT "FK_Items_Suppliers_SupplierId";
+
+ALTER TABLE "Suppliers" DROP CONSTRAINT "AK_Suppliers_UserId";
+
+ALTER TABLE "Items" ADD CONSTRAINT "FK_Items_Suppliers_SupplierId" FOREIGN KEY ("SupplierId") REFERENCES "Suppliers" ("Id") ON DELETE CASCADE;
+
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20250912194959_FixItemsSupplier', '8.0.0');
+
+COMMIT;
+
