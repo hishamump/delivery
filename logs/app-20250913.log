@@ -1,0 +1,417 @@
+2025-09-13 19:36:33.971 +03:00 [INF] Starting DM web application
+2025-09-13 19:36:34.030 +03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2025-09-13 19:36:34.031 +03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2025-09-13 19:36:34.043 +03:00 [INF] Creating key {91f199f2-13b4-4679-949e-4b60028c2ec5} with creation date 2025-09-13 16:36:34Z, activation date 2025-09-13 16:36:34Z, and expiration date 2025-12-12 16:36:34Z.
+2025-09-13 19:36:34.055 +03:00 [WRN] No XML encryptor configured. Key {91f199f2-13b4-4679-949e-4b60028c2ec5} may be persisted to storage in unencrypted form.
+2025-09-13 19:36:34.090 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-13 19:36:34.091 +03:00 [INF] Hosting environment: Production
+2025-09-13 19:36:34.091 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-09-13 19:36:34.098 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/ - null null
+2025-09-13 19:36:34.135 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-13 19:36:34.791 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/ - 404 null null 693.6861ms
+2025-09-13 19:36:34.796 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:82/, Response status code: 404
+2025-09-13 19:37:38.568 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/ - null null
+2025-09-13 19:37:38.571 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/ - 404 null null 3.6205ms
+2025-09-13 19:37:38.572 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:82/, Response status code: 404
+2025-09-13 19:37:39.349 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/ - null null
+2025-09-13 19:37:39.352 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/ - 404 null null 3.1775ms
+2025-09-13 19:37:39.352 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:82/, Response status code: 404
+2025-09-13 19:39:14.251 +03:00 [INF] Application is shutting down...
+2025-09-13 19:39:42.709 +03:00 [INF] Starting DM web application
+2025-09-13 19:39:42.760 +03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2025-09-13 19:39:42.761 +03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2025-09-13 19:39:42.769 +03:00 [INF] Creating key {ea453565-4821-4a8b-a050-76db178382fa} with creation date 2025-09-13 16:39:42Z, activation date 2025-09-13 16:39:42Z, and expiration date 2025-12-12 16:39:42Z.
+2025-09-13 19:39:42.780 +03:00 [WRN] No XML encryptor configured. Key {ea453565-4821-4a8b-a050-76db178382fa} may be persisted to storage in unencrypted form.
+2025-09-13 19:39:42.815 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-13 19:39:42.815 +03:00 [INF] Hosting environment: Production
+2025-09-13 19:39:42.815 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-09-13 19:39:42.821 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/ - null null
+2025-09-13 19:39:42.843 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-13 19:39:42.863 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/ - 404 null null 41.1641ms
+2025-09-13 19:39:42.867 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:82/, Response status code: 404
+2025-09-13 19:39:45.137 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/ - null null
+2025-09-13 19:39:45.140 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/ - 404 null null 2.65ms
+2025-09-13 19:39:45.140 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:82/, Response status code: 404
+2025-09-13 19:39:45.934 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/ - null null
+2025-09-13 19:39:45.937 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/ - 404 null null 2.5453ms
+2025-09-13 19:39:45.937 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:82/, Response status code: 404
+2025-09-13 19:39:46.504 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/ - null null
+2025-09-13 19:39:46.505 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/ - 404 null null 0.6686ms
+2025-09-13 19:39:46.505 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:82/, Response status code: 404
+2025-09-13 19:39:46.777 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/ - null null
+2025-09-13 19:39:46.778 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/ - 404 null null 0.786ms
+2025-09-13 19:39:46.778 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:82/, Response status code: 404
+2025-09-13 19:40:43.614 +03:00 [INF] Application is shutting down...
+2025-09-13 19:41:02.207 +03:00 [INF] Starting DM web application
+2025-09-13 19:41:02.260 +03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2025-09-13 19:41:02.261 +03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2025-09-13 19:41:02.277 +03:00 [INF] Creating key {c8fa2179-8f1d-4a4d-b2a1-b4ad95800b26} with creation date 2025-09-13 16:41:02Z, activation date 2025-09-13 16:41:02Z, and expiration date 2025-12-12 16:41:02Z.
+2025-09-13 19:41:02.286 +03:00 [WRN] No XML encryptor configured. Key {c8fa2179-8f1d-4a4d-b2a1-b4ad95800b26} may be persisted to storage in unencrypted form.
+2025-09-13 19:41:02.329 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-13 19:41:02.329 +03:00 [INF] Hosting environment: Production
+2025-09-13 19:41:02.329 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-09-13 19:41:02.340 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/ - null null
+2025-09-13 19:41:02.378 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-13 19:41:02.403 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/ - 404 null null 64.7262ms
+2025-09-13 19:41:02.408 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:82/, Response status code: 404
+2025-09-13 19:41:09.826 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/index.html - null null
+2025-09-13 19:41:09.882 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/index.html - 200 null text/html;charset=utf-8 56.4126ms
+2025-09-13 19:41:09.988 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - null null
+2025-09-13 19:41:10.138 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 149.5184ms
+2025-09-13 20:01:43.593 +03:00 [INF] Application is shutting down...
+2025-09-13 21:27:09.278 +03:00 [INF] Starting DM web application
+2025-09-13 21:27:09.323 +03:00 [INF] User profile is available. Using 'C:\Users\Bcc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-13 21:27:09.394 +03:00 [INF] Unable to bind to http://localhost:5000 on the IPv4 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2025-09-13 21:27:09.398 +03:00 [INF] Unable to bind to http://localhost:5000 on the IPv6 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2025-09-13 21:27:09.402 +03:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://localhost:5000.
+ ---> System.AggregateException: One or more errors occurred. (An attempt was made to access a socket in a way forbidden by its access permissions.) (An attempt was made to access a socket in a way forbidden by its access permissions.)
+ ---> System.Net.Sockets.SocketException (10013): An attempt was made to access a socket in a way forbidden by its access permissions.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.Net.Sockets.SocketException (10013): An attempt was made to access a socket in a way forbidden by its access permissions.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)<---
+
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.DefaultAddressStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-09-13 21:27:09.431 +03:00 [FTL] Application terminated unexpectedly
+System.IO.IOException: Failed to bind to address http://localhost:5000.
+ ---> System.AggregateException: One or more errors occurred. (An attempt was made to access a socket in a way forbidden by its access permissions.) (An attempt was made to access a socket in a way forbidden by its access permissions.)
+ ---> System.Net.Sockets.SocketException (10013): An attempt was made to access a socket in a way forbidden by its access permissions.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.Net.Sockets.SocketException (10013): An attempt was made to access a socket in a way forbidden by its access permissions.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)<---
+
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.DefaultAddressStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in D:\HW-Projects\x\sln\DM.API\Program.cs:line 149
+2025-09-13 21:28:15.413 +03:00 [INF] Starting DM web application
+2025-09-13 21:28:15.457 +03:00 [INF] User profile is available. Using 'C:\Users\Bcc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-13 21:28:15.500 +03:00 [INF] Unable to bind to http://localhost:5000 on the IPv4 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2025-09-13 21:28:15.504 +03:00 [INF] Unable to bind to http://localhost:5000 on the IPv6 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2025-09-13 21:28:15.507 +03:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://localhost:5000.
+ ---> System.AggregateException: One or more errors occurred. (An attempt was made to access a socket in a way forbidden by its access permissions.) (An attempt was made to access a socket in a way forbidden by its access permissions.)
+ ---> System.Net.Sockets.SocketException (10013): An attempt was made to access a socket in a way forbidden by its access permissions.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.Net.Sockets.SocketException (10013): An attempt was made to access a socket in a way forbidden by its access permissions.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)<---
+
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.DefaultAddressStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-09-13 21:28:15.534 +03:00 [FTL] Application terminated unexpectedly
+System.IO.IOException: Failed to bind to address http://localhost:5000.
+ ---> System.AggregateException: One or more errors occurred. (An attempt was made to access a socket in a way forbidden by its access permissions.) (An attempt was made to access a socket in a way forbidden by its access permissions.)
+ ---> System.Net.Sockets.SocketException (10013): An attempt was made to access a socket in a way forbidden by its access permissions.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.Net.Sockets.SocketException (10013): An attempt was made to access a socket in a way forbidden by its access permissions.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)<---
+
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.DefaultAddressStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in D:\HW-Projects\x\sln\DM.API\Program.cs:line 149
+2025-09-13 21:36:29.200 +03:00 [INF] Starting DM web application
+2025-09-13 21:36:29.244 +03:00 [INF] User profile is available. Using 'C:\Users\Bcc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-13 21:36:29.287 +03:00 [INF] Unable to bind to http://localhost:5000 on the IPv4 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2025-09-13 21:36:29.290 +03:00 [INF] Unable to bind to http://localhost:5000 on the IPv6 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2025-09-13 21:36:29.292 +03:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://localhost:5000.
+ ---> System.AggregateException: One or more errors occurred. (An attempt was made to access a socket in a way forbidden by its access permissions.) (An attempt was made to access a socket in a way forbidden by its access permissions.)
+ ---> System.Net.Sockets.SocketException (10013): An attempt was made to access a socket in a way forbidden by its access permissions.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.Net.Sockets.SocketException (10013): An attempt was made to access a socket in a way forbidden by its access permissions.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)<---
+
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.DefaultAddressStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-09-13 21:36:29.315 +03:00 [FTL] Application terminated unexpectedly
+System.IO.IOException: Failed to bind to address http://localhost:5000.
+ ---> System.AggregateException: One or more errors occurred. (An attempt was made to access a socket in a way forbidden by its access permissions.) (An attempt was made to access a socket in a way forbidden by its access permissions.)
+ ---> System.Net.Sockets.SocketException (10013): An attempt was made to access a socket in a way forbidden by its access permissions.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.Net.Sockets.SocketException (10013): An attempt was made to access a socket in a way forbidden by its access permissions.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)<---
+
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.DefaultAddressStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in D:\HW-Projects\x\sln\DM.API\Program.cs:line 149
+2025-09-13 21:55:51.649 +03:00 [INF] Starting DM web application
+2025-09-13 21:55:51.692 +03:00 [INF] User profile is available. Using 'C:\Users\Bcc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-13 21:55:51.738 +03:00 [INF] Now listening on: http://localhost:6000
+2025-09-13 21:55:51.742 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-13 21:55:51.744 +03:00 [INF] Hosting environment: Production
+2025-09-13 21:55:51.744 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-09-13 22:05:41.827 +03:00 [INF] Config changed. Stopping the following endpoints: 'http://localhost:6000'
+2025-09-13 22:05:41.838 +03:00 [INF] Config changed. Starting the following endpoints: 'http://localhost:7000'
+2025-09-13 22:05:47.943 +03:00 [INF] Application is shutting down...
+2025-09-13 22:05:51.296 +03:00 [INF] Starting DM web application
+2025-09-13 22:05:51.334 +03:00 [INF] User profile is available. Using 'C:\Users\Bcc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-13 22:05:51.376 +03:00 [INF] Now listening on: http://localhost:7000
+2025-09-13 22:05:51.380 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-13 22:05:51.381 +03:00 [INF] Hosting environment: Production
+2025-09-13 22:05:51.382 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-09-13 22:06:02.147 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger - null null
+2025-09-13 22:06:02.191 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger - 301 0 null 44.4895ms
+2025-09-13 22:06:02.198 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/index.html - null null
+2025-09-13 22:06:02.242 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 44.3518ms
+2025-09-13 22:06:02.299 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui.css - null null
+2025-09-13 22:06:02.300 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui-standalone-preset.js - null null
+2025-09-13 22:06:02.300 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui-bundle.js - null null
+2025-09-13 22:06:02.326 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-09-13 22:06:02.326 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-09-13 22:06:02.329 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 29.1758ms
+2025-09-13 22:06:02.330 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui.css - 200 152034 text/css 30.8833ms
+2025-09-13 22:06:02.343 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-09-13 22:06:02.347 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 47.2205ms
+2025-09-13 22:06:02.495 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/favicon-32x32.png - null null
+2025-09-13 22:06:02.501 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-09-13 22:06:02.502 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/favicon-32x32.png - 200 628 image/png 6.9963ms
+2025-09-13 22:06:02.525 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/v1/swagger.json - null null
+2025-09-13 22:06:02.652 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 127.0733ms
+2025-09-13 22:06:16.703 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/index.html - null null
+2025-09-13 22:06:16.708 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 4.7839ms
+2025-09-13 22:06:16.787 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui.css - null null
+2025-09-13 22:06:16.792 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui-bundle.js - null null
+2025-09-13 22:06:16.792 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-09-13 22:06:16.797 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui.css - 200 152034 text/css 10.0648ms
+2025-09-13 22:06:16.794 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui-standalone-preset.js - null null
+2025-09-13 22:06:16.807 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-09-13 22:06:16.813 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-09-13 22:06:16.816 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 22.2293ms
+2025-09-13 22:06:16.814 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 22.1923ms
+2025-09-13 22:06:17.132 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/v1/swagger.json - null null
+2025-09-13 22:06:17.173 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 40.3306ms
+2025-09-13 22:06:17.173 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/favicon-32x32.png - null null
+2025-09-13 22:06:17.181 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-09-13 22:06:17.186 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/favicon-32x32.png - 200 628 image/png 13.3818ms
+2025-09-13 22:16:38.057 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/ - null null
+2025-09-13 22:16:38.064 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-13 22:16:38.107 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/ - 404 0 null 50.5192ms
+2025-09-13 22:16:38.113 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7000/, Response status code: 404
+2025-09-13 22:16:50.718 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger - null null
+2025-09-13 22:16:50.722 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger - 301 0 null 3.8834ms
+2025-09-13 22:16:50.732 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/index.html - null null
+2025-09-13 22:16:50.738 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 6.3229ms
+2025-09-13 22:16:50.753 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui-bundle.js - null null
+2025-09-13 22:16:50.753 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui.css - null null
+2025-09-13 22:16:50.754 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui-standalone-preset.js - null null
+2025-09-13 22:16:50.762 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-09-13 22:16:50.762 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-09-13 22:16:50.766 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-09-13 22:16:50.770 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 16.4279ms
+2025-09-13 22:16:50.771 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui.css - 200 152034 text/css 17.9295ms
+2025-09-13 22:16:50.773 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 18.9727ms
+2025-09-13 22:16:50.961 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/v1/swagger.json - null null
+2025-09-13 22:16:50.985 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/favicon-32x32.png - null null
+2025-09-13 22:16:50.988 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-09-13 22:16:50.990 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/favicon-32x32.png - 200 628 image/png 4.8523ms
+2025-09-13 22:16:50.999 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.08ms
+2025-09-13 22:21:29.455 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:89/dashboard/ - null null
+2025-09-13 22:21:29.458 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:89/dashboard/ - 404 0 null 2.9187ms
+2025-09-13 22:21:29.460 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:89/dashboard/, Response status code: 404
+2025-09-13 22:21:32.925 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:89/ - null null
+2025-09-13 22:21:32.931 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:89/ - 404 0 null 5.5604ms
+2025-09-13 22:21:32.934 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:89/, Response status code: 404
+2025-09-13 22:21:35.028 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:89/ - null null
+2025-09-13 22:21:35.033 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:89/ - 404 0 null 4.1888ms
+2025-09-13 22:21:35.035 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:89/, Response status code: 404
+2025-09-13 22:22:54.351 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:89/ - null null
+2025-09-13 22:22:54.354 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:89/ - 404 0 null 3.5508ms
+2025-09-13 22:22:54.357 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:89/, Response status code: 404
+2025-09-13 22:23:03.647 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:89/swagger - null null
+2025-09-13 22:23:03.652 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:89/swagger - 301 0 null 4.5189ms
+2025-09-13 22:23:03.662 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:89/swagger/index.html - null null
+2025-09-13 22:23:03.665 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:89/swagger/index.html - 200 null text/html;charset=utf-8 3.4368ms
+2025-09-13 22:23:03.678 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:89/swagger/swagger-ui.css - null null
+2025-09-13 22:23:03.679 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:89/swagger/swagger-ui-bundle.js - null null
+2025-09-13 22:23:03.680 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:89/swagger/swagger-ui-standalone-preset.js - null null
+2025-09-13 22:23:03.683 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-09-13 22:23:03.691 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-09-13 22:23:03.695 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-09-13 22:23:03.696 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:89/swagger/swagger-ui.css - 200 152034 text/css 17.6861ms
+2025-09-13 22:23:03.698 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:89/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 18.4884ms
+2025-09-13 22:23:03.699 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:89/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 19.4766ms
+2025-09-13 22:23:03.895 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:89/swagger/v1/swagger.json - null null
+2025-09-13 22:23:03.912 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:89/swagger/favicon-32x32.png - null null
+2025-09-13 22:23:03.915 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-09-13 22:23:03.915 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:89/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.4488ms
+2025-09-13 22:23:03.917 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:89/swagger/favicon-32x32.png - 200 628 image/png 4.7661ms

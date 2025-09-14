@@ -1,0 +1,27 @@
+2025-09-14 11:55:40.129 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:89/api/Items - null null
+2025-09-14 11:55:40.149 +03:00 [INF] Executing endpoint 'DM.API.Controllers.ItemsController.GetAvailableItems (DM.API)'
+2025-09-14 11:55:40.176 +03:00 [INF] Route matched with {action = "GetAvailableItems", controller = "Items"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[System.Collections.Generic.IEnumerable`1[DM.Shared.DTOs.ItemDto]]]] GetAvailableItems() on controller DM.API.Controllers.ItemsController (DM.API).
+2025-09-14 11:55:41.825 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT i."Id", i."Category", i."CreatedAt", i."Currency", i."Description", i."ImageUrl", i."IsActive", i."MinOrderQuantity", i."Name", i."Price", i."StockQuantity", i."SupplierId", i."Unit", i."UpdatedAt", s."Id", s."BusinessDescription", s."BusinessLicense", s."BusinessName", s."ContactEmail", s."ContactPhone", s."CreatedAt", s."IsVerified", s."Logo", s."Rating", s."TotalRatings", s."UpdatedAt", s."UserId"
+FROM "Items" AS i
+INNER JOIN "Suppliers" AS s ON i."SupplierId" = s."Id"
+WHERE i."IsActive" AND i."StockQuantity" > 0
+ORDER BY i."Name"
+2025-09-14 11:55:42.023 +03:00 [INF] Executing OkObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[DM.Shared.DTOs.ItemDto, DM.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-14 11:55:42.067 +03:00 [INF] Executed action DM.API.Controllers.ItemsController.GetAvailableItems (DM.API) in 1885.1554ms
+2025-09-14 11:55:42.069 +03:00 [INF] Executed endpoint 'DM.API.Controllers.ItemsController.GetAvailableItems (DM.API)'
+2025-09-14 11:55:42.075 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:89/api/Items - 200 null application/json; charset=utf-8 1945.8214ms
+2025-09-14 11:56:16.842 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/api/Items - null null
+2025-09-14 11:56:16.847 +03:00 [INF] Executing endpoint 'DM.API.Controllers.ItemsController.GetAvailableItems (DM.API)'
+2025-09-14 11:56:16.848 +03:00 [INF] Route matched with {action = "GetAvailableItems", controller = "Items"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[System.Collections.Generic.IEnumerable`1[DM.Shared.DTOs.ItemDto]]]] GetAvailableItems() on controller DM.API.Controllers.ItemsController (DM.API).
+2025-09-14 11:56:16.894 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT i."Id", i."Category", i."CreatedAt", i."Currency", i."Description", i."ImageUrl", i."IsActive", i."MinOrderQuantity", i."Name", i."Price", i."StockQuantity", i."SupplierId", i."Unit", i."UpdatedAt", s."Id", s."BusinessDescription", s."BusinessLicense", s."BusinessName", s."ContactEmail", s."ContactPhone", s."CreatedAt", s."IsVerified", s."Logo", s."Rating", s."TotalRatings", s."UpdatedAt", s."UserId"
+FROM "Items" AS i
+INNER JOIN "Suppliers" AS s ON i."SupplierId" = s."Id"
+WHERE i."IsActive" AND i."StockQuantity" > 0
+ORDER BY i."Name"
+2025-09-14 11:56:16.901 +03:00 [INF] Executing OkObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[DM.Shared.DTOs.ItemDto, DM.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-14 11:56:16.903 +03:00 [INF] Executed action DM.API.Controllers.ItemsController.GetAvailableItems (DM.API) in 53.3111ms
+2025-09-14 11:56:16.904 +03:00 [INF] Executed endpoint 'DM.API.Controllers.ItemsController.GetAvailableItems (DM.API)'
+2025-09-14 11:56:16.905 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/api/Items - 200 null application/json; charset=utf-8 62.7086ms
+2025-09-14 18:49:00.753 +03:00 [INF] Application is shutting down...
