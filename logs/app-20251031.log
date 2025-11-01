@@ -1,0 +1,39 @@
+2025-10-31 21:16:55.907 +03:00 [INF] Starting DM web application
+2025-10-31 21:16:55.959 +03:00 [INF] User profile is available. Using 'C:\Users\Bcc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-31 21:16:56.053 +03:00 [INF] Now listening on: http://localhost:7000
+2025-10-31 21:16:56.056 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-31 21:16:56.058 +03:00 [INF] Hosting environment: Production
+2025-10-31 21:16:56.059 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-10-31 21:30:43.095 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/index.html - null null
+2025-10-31 21:30:43.170 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 76.6095ms
+2025-10-31 21:30:43.181 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui-bundle.js - null null
+2025-10-31 21:30:43.181 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui-standalone-preset.js - null null
+2025-10-31 21:30:43.181 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui.css - null null
+2025-10-31 21:30:43.209 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-10-31 21:30:43.209 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-10-31 21:30:43.212 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 30.4852ms
+2025-10-31 21:30:43.212 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui.css - 200 152034 text/css 30.8277ms
+2025-10-31 21:30:43.229 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-10-31 21:30:43.231 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 50.2863ms
+2025-10-31 21:30:43.409 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/v1/swagger.json - null null
+2025-10-31 21:30:43.428 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/favicon-32x32.png - null null
+2025-10-31 21:30:43.431 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-10-31 21:30:43.433 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/favicon-32x32.png - 200 628 image/png 4.2232ms
+2025-10-31 21:30:43.538 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 128.4987ms
+2025-10-31 21:44:43.581 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/api/Items/categories - null null
+2025-10-31 21:44:43.606 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-10-31 21:44:44.260 +03:00 [INF] Executing endpoint 'DM.API.Controllers.ItemsController.GetCategories (DM.API)'
+2025-10-31 21:44:44.281 +03:00 [INF] Route matched with {action = "GetCategories", controller = "Items"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[System.Collections.Generic.IEnumerable`1[System.String]]]] GetCategories() on controller DM.API.Controllers.ItemsController (DM.API).
+2025-10-31 21:44:45.778 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Category"
+FROM (
+    SELECT DISTINCT i."Category"
+    FROM "Items" AS i
+    WHERE i."IsActive"
+) AS t
+ORDER BY t."Category"
+2025-10-31 21:44:45.825 +03:00 [INF] Executing OkObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-31 21:44:45.838 +03:00 [INF] Executed action DM.API.Controllers.ItemsController.GetCategories (DM.API) in 1550.9063ms
+2025-10-31 21:44:45.840 +03:00 [INF] Executed endpoint 'DM.API.Controllers.ItemsController.GetCategories (DM.API)'
+2025-10-31 21:44:45.846 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/api/Items/categories - 200 null application/json; charset=utf-8 2264.2236ms
+2025-10-31 22:11:13.921 +03:00 [INF] Application is shutting down...

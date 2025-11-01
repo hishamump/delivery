@@ -1,0 +1,10 @@
+﻿# Create and apply migration
+dotnet ef migrations add CreateUserProfilesSystem --project DM.Infrastructure --startup-project DM.API
+dotnet ef database update --project DM.Infrastructure --startup-project DM.API
+
+Add-Migration InitialCreate
+Update-Database
+
+
+Applying Entity Framework Core migrations in production Generate and Apply SQL Scripts
+>Script-Migration

@@ -1,0 +1,25 @@
+2025-10-18 11:04:19.382 +03:00 [INF] Starting DM web application
+2025-10-18 11:04:19.466 +03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2025-10-18 11:04:19.467 +03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2025-10-18 11:04:19.488 +03:00 [INF] Creating key {4ae3b117-86f8-4b29-b253-5f852758a4ea} with creation date 2025-10-18 08:04:19Z, activation date 2025-10-18 08:04:19Z, and expiration date 2026-01-16 08:04:19Z.
+2025-10-18 11:04:19.511 +03:00 [WRN] No XML encryptor configured. Key {4ae3b117-86f8-4b29-b253-5f852758a4ea} may be persisted to storage in unencrypted form.
+2025-10-18 11:04:19.610 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-18 11:04:19.610 +03:00 [INF] Hosting environment: Production
+2025-10-18 11:04:19.610 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-10-18 11:04:19.622 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/index.html - null null
+2025-10-18 11:04:19.763 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/index.html - 200 null text/html;charset=utf-8 142.4565ms
+2025-10-18 11:04:19.767 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/swagger-ui-standalone-preset.js - null null
+2025-10-18 11:04:19.769 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/swagger-ui-bundle.js - null null
+2025-10-18 11:04:19.769 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/swagger-ui.css - null null
+2025-10-18 11:04:19.779 +03:00 [INF] The file /swagger-ui-bundle.js was not modified
+2025-10-18 11:04:19.779 +03:00 [INF] The file /swagger-ui.css was not modified
+2025-10-18 11:04:19.779 +03:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2025-10-18 11:04:19.782 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/swagger-ui-standalone-preset.js - 304 null text/javascript 14.6364ms
+2025-10-18 11:04:19.782 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/swagger-ui-bundle.js - 304 null text/javascript 12.8249ms
+2025-10-18 11:04:19.782 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/swagger-ui.css - 304 null text/css 12.2307ms
+2025-10-18 11:04:19.923 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - null null
+2025-10-18 11:04:19.961 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/favicon-32x32.png - null null
+2025-10-18 11:04:19.962 +03:00 [INF] The file /favicon-32x32.png was not modified
+2025-10-18 11:04:19.962 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/favicon-32x32.png - 304 null image/png 1.3863ms
+2025-10-18 11:04:20.200 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 276.4481ms
+2025-10-18 11:25:13.682 +03:00 [INF] Application is shutting down...
