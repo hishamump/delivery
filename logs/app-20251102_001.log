@@ -1,0 +1,29 @@
+2025-11-02 04:00:15.454 +03:00 [INF] Executed DbCommand (128ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-11-02 04:00:15.551 +03:00 [INF] Starting DM web application
+2025-11-02 04:00:15.580 +03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2025-11-02 04:00:15.581 +03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2025-11-02 04:00:15.608 +03:00 [INF] Creating key {2d37d547-d580-4b87-a8f0-87dc65ae4a23} with creation date 2025-11-02 01:00:15Z, activation date 2025-11-02 01:00:15Z, and expiration date 2026-01-31 01:00:15Z.
+2025-11-02 04:00:15.621 +03:00 [WRN] No XML encryptor configured. Key {2d37d547-d580-4b87-a8f0-87dc65ae4a23} may be persisted to storage in unencrypted form.
+2025-11-02 04:00:15.690 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-02 04:00:15.690 +03:00 [INF] Hosting environment: Production
+2025-11-02 04:00:15.690 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-11-02 04:00:15.711 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - null null
+2025-11-02 04:00:16.178 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 469.3793ms

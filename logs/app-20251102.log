@@ -521,3 +521,64 @@ RETURNING "IsActive";
 2025-11-02 02:35:14.651 +03:00 [INF] Executed action DM.API.Controllers.AuthController.Register (DM.API) in 1159.5968ms
 2025-11-02 02:35:14.654 +03:00 [INF] Executed endpoint 'DM.API.Controllers.AuthController.Register (DM.API)'
 2025-11-02 02:35:14.666 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/api/Auth/register - 200 null application/json; charset=utf-8 1330.4457ms
+2025-11-02 03:38:45.794 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/v1/swagger.json - null null
+2025-11-02 03:38:46.430 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 638.6308ms
+2025-11-02 03:59:20.469 +03:00 [INF] Application is shutting down...
+2025-11-02 03:59:47.443 +03:00 [INF] Executed DbCommand (94ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-11-02 03:59:47.528 +03:00 [INF] Starting DM web application
+2025-11-02 03:59:47.589 +03:00 [INF] User profile is available. Using 'C:\Users\Bcc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-02 03:59:47.705 +03:00 [INF] Now listening on: http://localhost:7000
+2025-11-02 03:59:47.708 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-02 03:59:47.709 +03:00 [INF] Hosting environment: Production
+2025-11-02 03:59:47.712 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-11-02 04:00:45.460 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger - null null
+2025-11-02 04:00:45.582 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger - 301 0 null 124.6902ms
+2025-11-02 04:00:45.597 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/index.html - null null
+2025-11-02 04:00:45.691 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 94.4014ms
+2025-11-02 04:00:46.026 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/v1/swagger.json - null null
+2025-11-02 04:00:46.430 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 404.5957ms
+2025-11-02 04:01:07.444 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/api/Items/CatSearch?searchterm=juice - null null
+2025-11-02 04:01:07.456 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-11-02 04:01:07.567 +03:00 [INF] Executing endpoint 'DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API)'
+2025-11-02 04:01:07.600 +03:00 [INF] Route matched with {action = "GetitemsByCategries", controller = "Items"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[System.Collections.Generic.IEnumerable`1[DM.Shared.DTOs.ItemDto]]]] GetitemsByCategries(System.String[], System.String) on controller DM.API.Controllers.ItemsController (DM.API).
+2025-11-02 04:01:08.676 +03:00 [INF] Executed DbCommand (141ms) [Parameters=[@__categories_0='?' (DbType = Object), @__ToLower_1_rewritten='?', @__ToLower_1_rewritten_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT i."Id", i."Category", i."CreatedAt", i."Currency", i."Description", i."ImageUrl", i."IsActive", i."MinOrderQuantity", i."Name", i."Price", i."StockQuantity", i."SupplierId", i."Unit", i."UpdatedAt", s."Id", s."BusinessDescription", s."BusinessLicense", s."BusinessName", s."ContactEmail", s."ContactPhone", s."CreatedAt", s."IsVerified", s."Logo", s."Rating", s."TotalRatings", s."UpdatedAt", s."UserId"
+FROM "Items" AS i
+INNER JOIN "Suppliers" AS s ON i."SupplierId" = s."Id"
+WHERE i."Category" = ANY (@__categories_0) AND i."IsActive" AND (lower(i."Name") LIKE @__ToLower_1_rewritten ESCAPE '\' OR lower(i."Description") LIKE @__ToLower_1_rewritten_1 ESCAPE '\')
+ORDER BY i."Name"
+2025-11-02 04:01:08.734 +03:00 [INF] Executing OkObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[DM.Shared.DTOs.ItemDto, DM.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-02 04:01:08.812 +03:00 [INF] Executed action DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API) in 1204.4777ms
+2025-11-02 04:01:08.814 +03:00 [INF] Executed endpoint 'DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API)'
+2025-11-02 04:01:08.825 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/api/Items/CatSearch?searchterm=juice - 200 null application/json; charset=utf-8 1381.3462ms
+2025-11-02 04:01:46.608 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/api/Items/CatSearch?categories=Medical&categories=string&searchterm=juice - null null
+2025-11-02 04:01:46.616 +03:00 [INF] Executing endpoint 'DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API)'
+2025-11-02 04:01:46.617 +03:00 [INF] Route matched with {action = "GetitemsByCategries", controller = "Items"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[System.Collections.Generic.IEnumerable`1[DM.Shared.DTOs.ItemDto]]]] GetitemsByCategries(System.String[], System.String) on controller DM.API.Controllers.ItemsController (DM.API).
+2025-11-02 04:01:46.753 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__categories_0='?' (DbType = Object), @__ToLower_1_rewritten='?', @__ToLower_1_rewritten_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT i."Id", i."Category", i."CreatedAt", i."Currency", i."Description", i."ImageUrl", i."IsActive", i."MinOrderQuantity", i."Name", i."Price", i."StockQuantity", i."SupplierId", i."Unit", i."UpdatedAt", s."Id", s."BusinessDescription", s."BusinessLicense", s."BusinessName", s."ContactEmail", s."ContactPhone", s."CreatedAt", s."IsVerified", s."Logo", s."Rating", s."TotalRatings", s."UpdatedAt", s."UserId"
+FROM "Items" AS i
+INNER JOIN "Suppliers" AS s ON i."SupplierId" = s."Id"
+WHERE i."Category" = ANY (@__categories_0) AND i."IsActive" AND (lower(i."Name") LIKE @__ToLower_1_rewritten ESCAPE '\' OR lower(i."Description") LIKE @__ToLower_1_rewritten_1 ESCAPE '\')
+ORDER BY i."Name"
+2025-11-02 04:01:46.969 +03:00 [INF] Executing OkObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[DM.Shared.DTOs.ItemDto, DM.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-02 04:01:46.983 +03:00 [INF] Executed action DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API) in 347.9419ms
+2025-11-02 04:01:46.984 +03:00 [INF] Executed endpoint 'DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API)'
+2025-11-02 04:01:46.987 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/api/Items/CatSearch?categories=Medical&categories=string&searchterm=juice - 200 null application/json; charset=utf-8 379.3501ms
