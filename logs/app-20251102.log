@@ -582,3 +582,143 @@ ORDER BY i."Name"
 2025-11-02 04:01:46.983 +03:00 [INF] Executed action DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API) in 347.9419ms
 2025-11-02 04:01:46.984 +03:00 [INF] Executed endpoint 'DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API)'
 2025-11-02 04:01:46.987 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/api/Items/CatSearch?categories=Medical&categories=string&searchterm=juice - 200 null application/json; charset=utf-8 379.3501ms
+2025-11-02 04:05:43.590 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/api/Items/CatSearch?categories=Medical&categories=string&searchterm=juice - null null
+2025-11-02 04:05:43.606 +03:00 [INF] Executing endpoint 'DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API)'
+2025-11-02 04:05:43.658 +03:00 [INF] Route matched with {action = "GetitemsByCategries", controller = "Items"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[System.Collections.Generic.IEnumerable`1[DM.Shared.DTOs.ItemDto]]]] GetitemsByCategries(System.String[], System.String) on controller DM.API.Controllers.ItemsController (DM.API).
+2025-11-02 04:05:43.792 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__categories_0='?' (DbType = Object), @__ToLower_1_rewritten='?', @__ToLower_1_rewritten_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT i."Id", i."Category", i."CreatedAt", i."Currency", i."Description", i."ImageUrl", i."IsActive", i."MinOrderQuantity", i."Name", i."Price", i."StockQuantity", i."SupplierId", i."Unit", i."UpdatedAt", s."Id", s."BusinessDescription", s."BusinessLicense", s."BusinessName", s."ContactEmail", s."ContactPhone", s."CreatedAt", s."IsVerified", s."Logo", s."Rating", s."TotalRatings", s."UpdatedAt", s."UserId"
+FROM "Items" AS i
+INNER JOIN "Suppliers" AS s ON i."SupplierId" = s."Id"
+WHERE i."Category" = ANY (@__categories_0) AND i."IsActive" AND (lower(i."Name") LIKE @__ToLower_1_rewritten ESCAPE '\' OR lower(i."Description") LIKE @__ToLower_1_rewritten_1 ESCAPE '\')
+ORDER BY i."Name"
+2025-11-02 04:05:43.801 +03:00 [INF] Executing OkObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[DM.Shared.DTOs.ItemDto, DM.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-02 04:05:43.804 +03:00 [INF] Executed action DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API) in 131.3792ms
+2025-11-02 04:05:43.808 +03:00 [INF] Executed endpoint 'DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API)'
+2025-11-02 04:05:43.811 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/api/Items/CatSearch?categories=Medical&categories=string&searchterm=juice - 200 null application/json; charset=utf-8 220.9096ms
+2025-11-02 04:05:54.470 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/api/Items/CatSearch?categories=Medical&categories=string&searchterm=juice - null null
+2025-11-02 04:05:54.474 +03:00 [INF] Executing endpoint 'DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API)'
+2025-11-02 04:05:54.481 +03:00 [INF] Route matched with {action = "GetitemsByCategries", controller = "Items"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[System.Collections.Generic.IEnumerable`1[DM.Shared.DTOs.ItemDto]]]] GetitemsByCategries(System.String[], System.String) on controller DM.API.Controllers.ItemsController (DM.API).
+2025-11-02 04:05:54.528 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__categories_0='?' (DbType = Object), @__ToLower_1_rewritten='?', @__ToLower_1_rewritten_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT i."Id", i."Category", i."CreatedAt", i."Currency", i."Description", i."ImageUrl", i."IsActive", i."MinOrderQuantity", i."Name", i."Price", i."StockQuantity", i."SupplierId", i."Unit", i."UpdatedAt", s."Id", s."BusinessDescription", s."BusinessLicense", s."BusinessName", s."ContactEmail", s."ContactPhone", s."CreatedAt", s."IsVerified", s."Logo", s."Rating", s."TotalRatings", s."UpdatedAt", s."UserId"
+FROM "Items" AS i
+INNER JOIN "Suppliers" AS s ON i."SupplierId" = s."Id"
+WHERE i."Category" = ANY (@__categories_0) AND i."IsActive" AND (lower(i."Name") LIKE @__ToLower_1_rewritten ESCAPE '\' OR lower(i."Description") LIKE @__ToLower_1_rewritten_1 ESCAPE '\')
+ORDER BY i."Name"
+2025-11-02 04:05:54.546 +03:00 [INF] Executing OkObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[DM.Shared.DTOs.ItemDto, DM.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-02 04:05:54.551 +03:00 [INF] Executed action DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API) in 66.2506ms
+2025-11-02 04:05:54.555 +03:00 [INF] Executed endpoint 'DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API)'
+2025-11-02 04:05:54.562 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/api/Items/CatSearch?categories=Medical&categories=string&searchterm=juice - 200 null application/json; charset=utf-8 91.9018ms
+2025-11-02 04:06:07.371 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/api/Items/CatSearch?categories=Medical&categories=string - null null
+2025-11-02 04:06:07.373 +03:00 [INF] Executing endpoint 'DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API)'
+2025-11-02 04:06:07.377 +03:00 [INF] Route matched with {action = "GetitemsByCategries", controller = "Items"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[System.Collections.Generic.IEnumerable`1[DM.Shared.DTOs.ItemDto]]]] GetitemsByCategries(System.String[], System.String) on controller DM.API.Controllers.ItemsController (DM.API).
+2025-11-02 04:06:07.424 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__categories_0='?' (DbType = Object)], CommandType='"Text"', CommandTimeout='30']
+SELECT i."Id", i."Category", i."CreatedAt", i."Currency", i."Description", i."ImageUrl", i."IsActive", i."MinOrderQuantity", i."Name", i."Price", i."StockQuantity", i."SupplierId", i."Unit", i."UpdatedAt", s."Id", s."BusinessDescription", s."BusinessLicense", s."BusinessName", s."ContactEmail", s."ContactPhone", s."CreatedAt", s."IsVerified", s."Logo", s."Rating", s."TotalRatings", s."UpdatedAt", s."UserId"
+FROM "Items" AS i
+INNER JOIN "Suppliers" AS s ON i."SupplierId" = s."Id"
+WHERE i."Category" = ANY (@__categories_0) AND i."IsActive"
+ORDER BY i."Name"
+2025-11-02 04:06:07.434 +03:00 [INF] Executing OkObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[DM.Shared.DTOs.ItemDto, DM.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-02 04:06:07.436 +03:00 [INF] Executed action DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API) in 54.893ms
+2025-11-02 04:06:07.437 +03:00 [INF] Executed endpoint 'DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API)'
+2025-11-02 04:06:07.439 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/api/Items/CatSearch?categories=Medical&categories=string - 200 null application/json; charset=utf-8 68.3244ms
+2025-11-02 04:07:02.623 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/api/Items/CatSearch?categories=Medical&categories=string&searchterm=dd - null null
+2025-11-02 04:07:02.629 +03:00 [INF] Executing endpoint 'DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API)'
+2025-11-02 04:07:02.631 +03:00 [INF] Route matched with {action = "GetitemsByCategries", controller = "Items"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[System.Collections.Generic.IEnumerable`1[DM.Shared.DTOs.ItemDto]]]] GetitemsByCategries(System.String[], System.String) on controller DM.API.Controllers.ItemsController (DM.API).
+2025-11-02 04:07:02.644 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__categories_0='?' (DbType = Object), @__ToLower_1_rewritten='?', @__ToLower_1_rewritten_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT i."Id", i."Category", i."CreatedAt", i."Currency", i."Description", i."ImageUrl", i."IsActive", i."MinOrderQuantity", i."Name", i."Price", i."StockQuantity", i."SupplierId", i."Unit", i."UpdatedAt", s."Id", s."BusinessDescription", s."BusinessLicense", s."BusinessName", s."ContactEmail", s."ContactPhone", s."CreatedAt", s."IsVerified", s."Logo", s."Rating", s."TotalRatings", s."UpdatedAt", s."UserId"
+FROM "Items" AS i
+INNER JOIN "Suppliers" AS s ON i."SupplierId" = s."Id"
+WHERE i."Category" = ANY (@__categories_0) AND i."IsActive" AND (lower(i."Name") LIKE @__ToLower_1_rewritten ESCAPE '\' OR lower(i."Description") LIKE @__ToLower_1_rewritten_1 ESCAPE '\')
+ORDER BY i."Name"
+2025-11-02 04:07:02.689 +03:00 [INF] Executing OkObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[DM.Shared.DTOs.ItemDto, DM.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-02 04:07:02.695 +03:00 [INF] Executed action DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API) in 58.9237ms
+2025-11-02 04:07:02.700 +03:00 [INF] Executed endpoint 'DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API)'
+2025-11-02 04:07:02.702 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/api/Items/CatSearch?categories=Medical&categories=string&searchterm=dd - 200 null application/json; charset=utf-8 78.7915ms
+2025-11-02 04:07:08.932 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/api/Items/CatSearch?categories=Medical&categories=string&searchterm=jui - null null
+2025-11-02 04:07:08.936 +03:00 [INF] Executing endpoint 'DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API)'
+2025-11-02 04:07:08.937 +03:00 [INF] Route matched with {action = "GetitemsByCategries", controller = "Items"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[System.Collections.Generic.IEnumerable`1[DM.Shared.DTOs.ItemDto]]]] GetitemsByCategries(System.String[], System.String) on controller DM.API.Controllers.ItemsController (DM.API).
+2025-11-02 04:07:08.947 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__categories_0='?' (DbType = Object), @__ToLower_1_rewritten='?', @__ToLower_1_rewritten_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT i."Id", i."Category", i."CreatedAt", i."Currency", i."Description", i."ImageUrl", i."IsActive", i."MinOrderQuantity", i."Name", i."Price", i."StockQuantity", i."SupplierId", i."Unit", i."UpdatedAt", s."Id", s."BusinessDescription", s."BusinessLicense", s."BusinessName", s."ContactEmail", s."ContactPhone", s."CreatedAt", s."IsVerified", s."Logo", s."Rating", s."TotalRatings", s."UpdatedAt", s."UserId"
+FROM "Items" AS i
+INNER JOIN "Suppliers" AS s ON i."SupplierId" = s."Id"
+WHERE i."Category" = ANY (@__categories_0) AND i."IsActive" AND (lower(i."Name") LIKE @__ToLower_1_rewritten ESCAPE '\' OR lower(i."Description") LIKE @__ToLower_1_rewritten_1 ESCAPE '\')
+ORDER BY i."Name"
+2025-11-02 04:07:08.953 +03:00 [INF] Executing OkObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[DM.Shared.DTOs.ItemDto, DM.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-02 04:07:08.997 +03:00 [INF] Executed action DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API) in 55.3843ms
+2025-11-02 04:07:09.066 +03:00 [INF] Executed endpoint 'DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API)'
+2025-11-02 04:07:09.070 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/api/Items/CatSearch?categories=Medical&categories=string&searchterm=jui - 200 null application/json; charset=utf-8 138.3058ms
+2025-11-02 04:07:14.496 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/api/Items/CatSearch?categories=Medical&categories=string&searchterm=j - null null
+2025-11-02 04:07:14.503 +03:00 [INF] Executing endpoint 'DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API)'
+2025-11-02 04:07:14.506 +03:00 [INF] Route matched with {action = "GetitemsByCategries", controller = "Items"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[System.Collections.Generic.IEnumerable`1[DM.Shared.DTOs.ItemDto]]]] GetitemsByCategries(System.String[], System.String) on controller DM.API.Controllers.ItemsController (DM.API).
+2025-11-02 04:07:14.514 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__categories_0='?' (DbType = Object), @__ToLower_1_rewritten='?', @__ToLower_1_rewritten_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT i."Id", i."Category", i."CreatedAt", i."Currency", i."Description", i."ImageUrl", i."IsActive", i."MinOrderQuantity", i."Name", i."Price", i."StockQuantity", i."SupplierId", i."Unit", i."UpdatedAt", s."Id", s."BusinessDescription", s."BusinessLicense", s."BusinessName", s."ContactEmail", s."ContactPhone", s."CreatedAt", s."IsVerified", s."Logo", s."Rating", s."TotalRatings", s."UpdatedAt", s."UserId"
+FROM "Items" AS i
+INNER JOIN "Suppliers" AS s ON i."SupplierId" = s."Id"
+WHERE i."Category" = ANY (@__categories_0) AND i."IsActive" AND (lower(i."Name") LIKE @__ToLower_1_rewritten ESCAPE '\' OR lower(i."Description") LIKE @__ToLower_1_rewritten_1 ESCAPE '\')
+ORDER BY i."Name"
+2025-11-02 04:07:14.520 +03:00 [INF] Executing OkObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[DM.Shared.DTOs.ItemDto, DM.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-02 04:07:14.525 +03:00 [INF] Executed action DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API) in 14.7004ms
+2025-11-02 04:07:14.529 +03:00 [INF] Executed endpoint 'DM.API.Controllers.ItemsController.GetitemsByCategries (DM.API)'
+2025-11-02 04:07:14.531 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/api/Items/CatSearch?categories=Medical&categories=string&searchterm=j - 200 null application/json; charset=utf-8 34.8059ms
+2025-11-02 04:15:42.799 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/api/Items/a1b427b4-5748-4af5-9123-a298952ca2bf - null null
+2025-11-02 04:15:42.803 +03:00 [INF] Executing endpoint 'DM.API.Controllers.ItemsController.GetItem (DM.API)'
+2025-11-02 04:15:42.835 +03:00 [INF] Route matched with {action = "GetItem", controller = "Items"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[DM.Shared.DTOs.ItemDto]]] GetItem(System.Guid) on controller DM.API.Controllers.ItemsController (DM.API).
+2025-11-02 04:15:43.023 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[@__itemId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT i."Id", i."Category", i."CreatedAt", i."Currency", i."Description", i."ImageUrl", i."IsActive", i."MinOrderQuantity", i."Name", i."Price", i."StockQuantity", i."SupplierId", i."Unit", i."UpdatedAt", s."Id", s."BusinessDescription", s."BusinessLicense", s."BusinessName", s."ContactEmail", s."ContactPhone", s."CreatedAt", s."IsVerified", s."Logo", s."Rating", s."TotalRatings", s."UpdatedAt", s."UserId", u."Id", u."BirthDate", u."CreatedAt", u."Email", u."EmailNotifications", u."FullName", u."IsActive", u."LastLoginAt", u."PasswordHash", u."PhoneNumber", u."Photo", u."PreferredLanguage", u."Role", u."SmsNotifications", u."UpdatedAt"
+FROM "Items" AS i
+INNER JOIN "Suppliers" AS s ON i."SupplierId" = s."Id"
+INNER JOIN "Users" AS u ON s."UserId" = u."Id"
+WHERE i."Id" = @__itemId_0
+LIMIT 1
+2025-11-02 04:15:43.137 +03:00 [INF] Executing OkObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[DM.Shared.DTOs.ItemDto, DM.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-02 04:15:43.150 +03:00 [INF] Executed action DM.API.Controllers.ItemsController.GetItem (DM.API) in 275.6275ms
+2025-11-02 04:15:43.154 +03:00 [INF] Executed endpoint 'DM.API.Controllers.ItemsController.GetItem (DM.API)'
+2025-11-02 04:15:43.156 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/api/Items/a1b427b4-5748-4af5-9123-a298952ca2bf - 200 null application/json; charset=utf-8 356.82ms
+2025-11-02 04:31:47.052 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:7000/api/Items/7100d532-0734-495d-bb7f-53bcc76b5b98 - application/json 398
+2025-11-02 04:31:47.062 +03:00 [INF] CORS policy execution successful.
+2025-11-02 04:31:47.077 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Supplier)
+2025-11-02 04:31:47.112 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-11-02 04:31:47.128 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:7000/api/Items/7100d532-0734-495d-bb7f-53bcc76b5b98 - 401 0 null 75.0652ms
+2025-11-02 04:33:59.101 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/api/Auth/login - application/json 61
+2025-11-02 04:33:59.104 +03:00 [INF] CORS policy execution successful.
+2025-11-02 04:33:59.106 +03:00 [INF] Executing endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-11-02 04:33:59.118 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[DM.API.Controllers.LoginResponseDto]]] Login(DM.Shared.DTOs.LoginDto) on controller DM.API.Controllers.AuthController (DM.API).
+2025-11-02 04:33:59.158 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-02 04:33:59.188 +03:00 [INF] Executed action DM.API.Controllers.AuthController.Login (DM.API) in 65.2393ms
+2025-11-02 04:33:59.190 +03:00 [INF] Executed endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-11-02 04:33:59.192 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/api/Auth/login - 400 null application/problem+json; charset=utf-8 90.7982ms
+2025-11-02 04:34:11.810 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/api/Auth/login - application/json 59
+2025-11-02 04:34:11.817 +03:00 [INF] CORS policy execution successful.
+2025-11-02 04:34:11.818 +03:00 [INF] Executing endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-11-02 04:34:11.819 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[DM.API.Controllers.LoginResponseDto]]] Login(DM.Shared.DTOs.LoginDto) on controller DM.API.Controllers.AuthController (DM.API).
+2025-11-02 04:34:11.826 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-02 04:34:11.827 +03:00 [INF] Executed action DM.API.Controllers.AuthController.Login (DM.API) in 5.8638ms
+2025-11-02 04:34:11.829 +03:00 [INF] Executed endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-11-02 04:34:11.831 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/api/Auth/login - 400 null application/problem+json; charset=utf-8 20.4274ms
+2025-11-02 04:35:52.277 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/api/Auth/register - application/json 110
+2025-11-02 04:35:52.282 +03:00 [INF] CORS policy execution successful.
+2025-11-02 04:35:52.284 +03:00 [INF] Executing endpoint 'DM.API.Controllers.AuthController.Register (DM.API)'
+2025-11-02 04:35:52.294 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[DM.Shared.DTOs.UserDto]]] Register(DM.Shared.DTOs.RegistrationDto) on controller DM.API.Controllers.AuthController (DM.API).
+2025-11-02 04:35:52.510 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u
+    WHERE u."Email" = @__email_0)
+2025-11-02 04:35:52.864 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Date), @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?' (DbType = DateTime), @p7='?', @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "BirthDate", "CreatedAt", "Email", "EmailNotifications", "FullName", "LastLoginAt", "PasswordHash", "PhoneNumber", "Photo", "PreferredLanguage", "Role", "SmsNotifications", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13)
+RETURNING "IsActive";
+2025-11-02 04:35:52.917 +03:00 [INF] User registered successfully: sami@gmail.com
+2025-11-02 04:35:52.921 +03:00 [INF] Executing OkObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[DM.Shared.DTOs.UserDto, DM.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-02 04:35:52.932 +03:00 [INF] Executed action DM.API.Controllers.AuthController.Register (DM.API) in 634.3389ms
+2025-11-02 04:35:52.936 +03:00 [INF] Executed endpoint 'DM.API.Controllers.AuthController.Register (DM.API)'
+2025-11-02 04:35:52.938 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/api/Auth/register - 200 null application/json; charset=utf-8 661.0881ms
+2025-11-02 04:37:15.573 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/api/Auth/login - application/json 57
+2025-11-02 04:37:15.578 +03:00 [INF] CORS policy execution successful.
+2025-11-02 04:37:15.581 +03:00 [INF] Executing endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-11-02 04:37:15.582 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[DM.API.Controllers.LoginResponseDto]]] Login(DM.Shared.DTOs.LoginDto) on controller DM.API.Controllers.AuthController (DM.API).
+2025-11-02 04:37:15.592 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-02 04:37:15.594 +03:00 [INF] Executed action DM.API.Controllers.AuthController.Login (DM.API) in 4.6958ms
+2025-11-02 04:37:15.597 +03:00 [INF] Executed endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-11-02 04:37:15.601 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/api/Auth/login - 400 null application/problem+json; charset=utf-8 27.5771ms

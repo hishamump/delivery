@@ -1,0 +1,94 @@
+2025-11-14 11:57:20.763 +03:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-11-14 11:57:20.800 +03:00 [INF] Starting DM web application
+2025-11-14 11:57:20.814 +03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2025-11-14 11:57:20.814 +03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2025-11-14 11:57:20.822 +03:00 [INF] Creating key {af6fd104-36fa-47d6-8a10-740998a36b76} with creation date 2025-11-14 08:57:20Z, activation date 2025-11-14 08:57:20Z, and expiration date 2026-02-12 08:57:20Z.
+2025-11-14 11:57:20.830 +03:00 [WRN] No XML encryptor configured. Key {af6fd104-36fa-47d6-8a10-740998a36b76} may be persisted to storage in unencrypted form.
+2025-11-14 11:57:20.863 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-14 11:57:20.863 +03:00 [INF] Hosting environment: Production
+2025-11-14 11:57:20.864 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-11-14 11:57:20.874 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - null null
+2025-11-14 11:57:21.038 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 165.4022ms
+2025-11-14 11:58:16.826 +03:00 [INF] Application is shutting down...
+2025-11-14 12:01:50.263 +03:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-11-14 12:01:50.297 +03:00 [INF] Starting DM web application
+2025-11-14 12:01:50.311 +03:00 [INF] User profile is available. Using 'C:\Users\Bcc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-14 12:01:50.348 +03:00 [INF] Now listening on: http://localhost:7000
+2025-11-14 12:01:50.352 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-14 12:01:50.354 +03:00 [INF] Hosting environment: Production
+2025-11-14 12:01:50.355 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-11-14 12:03:42.056 +03:00 [INF] Application is shutting down...
+2025-11-14 12:03:44.524 +03:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-11-14 12:03:44.560 +03:00 [INF] Starting DM web application
+2025-11-14 12:03:44.574 +03:00 [INF] User profile is available. Using 'C:\Users\Bcc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-14 12:03:44.609 +03:00 [INF] Now listening on: http://localhost:7000
+2025-11-14 12:03:44.612 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-14 12:03:44.614 +03:00 [INF] Hosting environment: Production
+2025-11-14 12:03:44.616 +03:00 [INF] Content root path: D:\Delivery Publish
+2025-11-14 12:03:57.262 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/index.html - null null
+2025-11-14 12:03:57.344 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 85.9466ms
+2025-11-14 12:03:57.526 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/v1/swagger.json - null null
+2025-11-14 12:03:57.660 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 133.5558ms
+2025-11-14 12:04:12.907 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/api/Auth/login - application/json 47
+2025-11-14 12:04:12.916 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-11-14 12:04:12.920 +03:00 [INF] CORS policy execution successful.
+2025-11-14 12:04:13.571 +03:00 [INF] Executing endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-11-14 12:04:13.587 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DM.Shared.DTOs.Common.ApiResponse`1[DM.API.Controllers.LoginResponseDto]]] Login(DM.Shared.DTOs.LoginDto) on controller DM.API.Controllers.AuthController (DM.API).
+2025-11-14 12:04:13.748 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'DM.Shared.DTOs.Common.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-14 12:04:13.759 +03:00 [INF] Executed action DM.API.Controllers.AuthController.Login (DM.API) in 164.338ms
+2025-11-14 12:04:13.761 +03:00 [INF] Executed endpoint 'DM.API.Controllers.AuthController.Login (DM.API)'
+2025-11-14 12:04:13.765 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/api/Auth/login - 400 null application/json; charset=utf-8 857.5389ms

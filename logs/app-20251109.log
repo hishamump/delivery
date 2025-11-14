@@ -1,0 +1,6 @@
+2025-11-09 01:32:23.984 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/v1/swagger.json - null null
+2025-11-09 01:32:24.189 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 212.3918ms
+2025-11-09 02:02:57.663 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/index.html - null null
+2025-11-09 02:02:57.678 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 15.6649ms
+2025-11-09 02:02:57.845 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/v1/swagger.json - null null
+2025-11-09 02:02:57.886 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 40.4756ms

@@ -27,3 +27,4 @@ WHERE
 2025-11-02 04:00:15.690 +03:00 [INF] Content root path: D:\Delivery Publish
 2025-11-02 04:00:15.711 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - null null
 2025-11-02 04:00:16.178 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:82/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 469.3793ms
+2025-11-02 04:21:10.127 +03:00 [INF] Application is shutting down...

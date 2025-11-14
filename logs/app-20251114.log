@@ -1,0 +1,3 @@
+2025-11-14 11:57:12.366 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger/v1/swagger.json - null null
+2025-11-14 11:57:12.618 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 256.1144ms
+2025-11-14 12:00:43.796 +03:00 [INF] Application is shutting down...
